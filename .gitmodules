@@ -1,3 +1,9 @@
 [submodule "projects/vm-examples"]
 	path = projects/vm-examples
 	url = https://github.com/adl09/camkes-vm-examples.git
+[submodule "projects/vm"]
+	path = projects/vm
+	url = https://github.com/adl09/camkes-vm.git
+[submodule "camkes-vm-examples-manifest/projects/vm"]
+	path = camkes-vm-examples-manifest/projects/vm
+	url = https://github.com/adl09/camkes-vm.git

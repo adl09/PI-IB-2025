@@ -1,6 +1,0 @@
-[submodule "camkes-vm-examples-manifest/projects/vm"]
-	path = camkes-vm-examples-manifest/projects/vm
-	url = https://github.com/adl09/camkes-vm.git
-[submodule "camkes-vm-examples-manifest/projects/vm-examples"]
-	path = camkes-vm-examples-manifest/projects/vm-examples
-	url = https://github.com/adl09/camkes-vm-examples

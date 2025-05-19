@@ -58,7 +58,7 @@ VM0 (tap_inA)
     ip route add default via 192.168.1.3 dev eth0
     echo 1 > /proc/sys/net/ipv4/ip_forward
     iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
-    ip route add 10.0.2.0/24 via 192.168.1.2
+    ip route add 10.0.2.0/24 via 192.168.1.2 dev eth0
     ip route add 10.0.0.0/24 via 192.168.1.2 dev eth0
 ```
 VM1 (wireguard)
@@ -114,7 +114,7 @@ VM0 (tap_inB)
     ip route add default via 192.168.1.3 dev eth0
     echo 1 > /proc/sys/net/ipv4/ip_forward
     iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
-    ip route add 10.0.1.0/24 via 192.168.1.2
+    ip route add 10.0.1.0/24 via 192.168.1.2 dev eth0
     ip route add 10.0.0.0/24 via 192.168.1.2 dev eth0
 ```
 

@@ -1,7 +1,9 @@
-!/camkes-vm-examples-manifest/build_zmq/images/capdl-loader-image-x86_64-pc99
-!/camkes-vm-examples-manifest/build_zmq/images/kernel-x86_64-pc99
 /camkes-vm-examples-manifest
-!/custom-vm-kernel/linux-stable/arch/x86/boot/bzImage
-!/custom-vm-kernel/buildroot-2023.11/output/images/rootfs.cpio
+!camkes-vm-examples-manifest/build_zmq/images/capdl-loader-image-x86_64-pc99
+!camkes-vm-examples-manifest/build_zmq/images/kernel-x86_64-pc99
+
 /custom-vm-kernel
+!custom-vm-kernel/linux-stable/arch/x86/boot/bzImage
+!custom-vm-kernel/buildroot-2023.11/output/images/rootfs.cpio
+
 /seL4-CAmkES-L4v-dockerfiles

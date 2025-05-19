@@ -1,0 +1,12 @@
+sudo qemu-system-x86_64 \
+    -machine q35,accel=kvm,kernel-irqchip=split \
+    -cpu host,+vmx \
+    -m 2G \
+    -kernel camkes-vm-examples/build/images/kernel-x86_64-pc99 \
+    -initrd camkes-vm-examples/build/images/capdl-loader-image-x86_64-pc99 \
+    -append "pci=nomsi" \
+    -nographic \
+    -serial mon:stdio \
+    -device intel-iommu,intremap=off \
+    -netdev tap,id=net0,ifname=tap1,script=no,downscript=no \
+    -device e1000e,netdev=net0,mac=52:54:00:00:00:02

@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: PI_main.aux
+The style file: ibtesis.bst
+A level-1 auxiliary file: Capitulos/Abstract.aux
+A level-1 auxiliary file: Capitulos/1_Introduccion.aux
+A level-1 auxiliary file: Capitulos/2_Arquitectura.aux
+A level-1 auxiliary file: Capitulos/3_Estrategia_Modelos.aux
+A level-1 auxiliary file: Capitulos/Index_idea.aux
+A level-1 auxiliary file: Capitulos/Ap_XX.aux
+Database file #1: mibib.bib
+You've used 1 entry,
+            2634 wiz_defined-function locations,
+            1040 strings with 9627 characters,
+and the built_in function-call counts, 459 in all, are:
+= -- 25
+> -- 16
+< -- 2
++ -- 8
+- -- 4
+* -- 25
+:= -- 52
+add.period$ -- 4
+call.type$ -- 1
+change.case$ -- 3
+chr.to.int$ -- 0
+cite$ -- 1
+duplicate$ -- 46
+empty$ -- 46
+format.name$ -- 5
+if$ -- 102
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 13
+newline$ -- 10
+num.names$ -- 1
+pop$ -- 27
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 13
+stack$ -- 0
+substring$ -- 2
+swap$ -- 29
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 2
+width$ -- 2
+write$ -- 16

@@ -1,0 +1,53 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {chapter}{\'{I}ndice de s{\'{\i }}mbolos}{\es@scroman {v}}{section*.1}%
+\contentsline {chapter}{\'{I}ndice de contenidos}{\es@scroman {vii}}{section*.3}%
+\contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {ix}}{section*.5}%
+\contentsline {chapter}{\'{I}ndice de tablas}{\es@scroman {xi}}{section*.7}%
+\contentsline {chapter}{Resumen}{\es@scroman {xiii}}{section*.9}%
+\contentsline {chapter}{Abstract}{\es@scroman {xv}}{section*.11}%
+\babel@toc {english}{}\relax 
+\babel@toc {spanish}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {spanish}{}\relax 
+\contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Motivación}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Concepto de operaciones}{1}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Antecedentes}{1}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Suposiciones y restricciones}{1}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Resumen del sistema propuesto}{1}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Objetivos, metas y justificación del sistema}{1}{subsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.2.5}Usuarios y modos de operación}{1}{subsection.1.2.5}%
+\contentsline {section}{\numberline {1.3}Requerimientos}{1}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Funcionales}{1}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}De rendimiento}{1}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}De interfaz}{1}{subsection.1.3.3}%
+\contentsline {chapter}{\numberline {2}Arquitectura propuesta}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Descripción de tecnologías}{3}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}WireGuard}{3}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}seL4}{3}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}CAmkES}{3}{subsection.2.1.3}%
+\contentsline {subsubsection}{zmq\_samples}{4}{section*.14}%
+\contentsline {section}{\numberline {2.2}Arquitectura lógica}{4}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Dominios}{4}{subsection.2.2.1}%
+\contentsline {chapter}{\numberline {3}Estrategia de modelos en entornos virtualizados}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Sistema mínimo}{5}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Sistema completo usando máquinas virtuales}{6}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Sistema completo sobre seL4}{6}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Resumen}{6}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Implementación en entorno virtualizado}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Diseño del experimento}{7}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Procedimiento}{7}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Construcción de un kernel Linux con soporte para WireGuard}{7}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Generación de una imagen de sistema mediante Buildroot}{7}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Adaptación del ejemplo \textit {zmq\_samples}}{7}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Configuración del \textit {passthrough} de interfaz Ethernet}{8}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}Integración}{8}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Validación}{8}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Implementación en hardware}{9}{chapter.5}%
+\contentsline {section}{\numberline {5.1}SuperMicro SYS-E300-9D}{9}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Diseño del experimento}{9}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Procedimiento}{9}{section.5.3}%
+\contentsline {chapter}{\numberline {A}Apéndice I}{11}{appendix.Alph1}%
+\contentsline {chapter}{Bibliograf{\'{\i }}a}{13}{section*.18}%
+\contentsline {chapter}{Publicaciones asociadas}{15}{section*.20}%
+\contentsline {chapter}{Agradecimientos}{17}{section*.22}%

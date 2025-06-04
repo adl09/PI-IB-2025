@@ -35,8 +35,8 @@ sudo iptables -t nat -A POSTROUTING -s 100.64.0.0/24 -o wlp0s20f3 -j MASQUERADE
 # A:
 ```yaml
 sudo qemu-system-x86_64 \
-    -machine q35,accel=kvm,kernel-irqchip=split \
-    -cpu host,+vmx \
+    -machine q35,accel=kvm \
+    -cpu host \
     -m 2G \
     -kernel camkes-vm-examples-manifest/build_zmq/images/kernel-x86_64-pc99 \
     -initrd camkes-vm-examples-manifest/build_zmq/images/capdl-loader-image-x86_64-pc99 \
@@ -91,8 +91,8 @@ VM2 (tap_outA)
 # B:
 ```yaml
 sudo qemu-system-x86_64 \
-    -machine q35,accel=kvm,kernel-irqchip=split \
-    -cpu host,+vmx \
+    -machine q35,accel=kvm \
+    -cpu host \
     -m 2G \
     -kernel camkes-vm-examples-manifest/build_zmq/images/kernel-x86_64-pc99 \
     -initrd camkes-vm-examples-manifest/build_zmq/images/capdl-loader-image-x86_64-pc99 \
@@ -182,3 +182,47 @@ ifconfig eth0 up
 ip addr add 10.0.2.2/24 dev eth0
 ip route add default via 10.0.2.254
 ```
+
+# Results:
+
+iperf3 -c 10.0.1.1 -b 10M
+Connecting to host 10.0.1.1, port 5201
+[  5] local 10.0.2.2 port 58374 connected to 10.0.1.1 port 5201
+[ ID] Interval           Transfer     Bitrate         Retr  Cwnd
+[  5]   0.00-1.00   sec   355 KBytes  2.91 Mbits/sec   35   2.67 KBytes       
+[  5]   1.00-2.00   sec   285 KBytes  2.33 Mbits/sec   32   6.68 KBytes       
+[  5]   2.00-3.00   sec   431 KBytes  3.53 Mbits/sec   41   6.68 KBytes       
+[  5]   3.00-4.00   sec   432 KBytes  3.53 Mbits/sec   30   8.02 KBytes       
+[  5]   4.00-5.00   sec   417 KBytes  3.42 Mbits/sec   32   5.34 KBytes       
+[  5]   5.00-6.00   sec   224 KBytes  1.84 Mbits/sec   11   1.34 KBytes       
+[  5]   6.00-7.00   sec  0.00 Bytes  0.00 bits/sec    0   1.34 KBytes       
+[  5]   7.00-8.00   sec   211 KBytes  1.73 Mbits/sec    9   12.0 KBytes       
+[  5]   8.00-9.00   sec   250 KBytes  2.05 Mbits/sec   34   9.35 KBytes       
+[  5]   9.00-10.00  sec   382 KBytes  3.13 Mbits/sec   30   6.68 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Retr
+[  5]   0.00-10.00  sec  2.92 MBytes  2.45 Mbits/sec  254             sender
+[  5]   0.00-10.01  sec  2.87 MBytes  2.40 Mbits/sec                  receiver
+
+iperf Done.
+
+iperf3 -c 10.0.1.1 -u
+Connecting to host 10.0.1.1, port 5201
+[  5] local 10.0.2.2 port 45423 connected to 10.0.1.1 port 5201
+[ ID] Interval           Transfer     Bitrate         Total Datagrams
+[  5]   0.00-1.00   sec   238 KBytes  1.95 Mbits/sec  178  
+[  5]   1.00-2.00   sec  17.4 KBytes   142 Kbits/sec  13  
+[  5]   2.00-3.00   sec   128 KBytes  1.05 Mbits/sec  96  
+[  5]   3.00-4.00   sec   128 KBytes  1.05 Mbits/sec  96  
+[  5]   4.00-5.00   sec   128 KBytes  1.05 Mbits/sec  96  
+[  5]   5.00-6.00   sec   127 KBytes  1.04 Mbits/sec  95  
+[  5]   6.00-7.00   sec   128 KBytes  1.05 Mbits/sec  96  
+[  5]   7.00-8.00   sec   128 KBytes  1.05 Mbits/sec  96  
+[  5]   8.00-9.00   sec   128 KBytes  1.05 Mbits/sec  96  
+[  5]   9.00-10.00  sec   128 KBytes  1.05 Mbits/sec  96  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-10.00  sec  1.25 MBytes  1.05 Mbits/sec  0.000 ms  4114578669568/0 (-1.6e-41%)  �
+[  5]   0.00-10.01  sec  1.12 MBytes   938 Kbits/sec  0.255 ms  100/958 (10%)  receiver
+
+iperf Done.

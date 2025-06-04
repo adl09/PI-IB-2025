@@ -1,0 +1,64 @@
+\chapter{Implementación en entorno virtualizado} % sistema completo seL4 en QEMU
+
+\section{Diseño del experimento}
+\begin{itemize}
+    \item Se realizará en completamente en host. ¿Por qué? Simplicidad de implementación.
+\end{itemize}
+\section{Procedimiento} % Proceso de: linux_QEMU-linux_QEMU -> 3VMsel4_QEMU. 3VMsel4_QEMU
+  
+\subsection{Construcción de un kernel Linux con soporte para WireGuard}
+\begin{itemize}
+    \item De www.wireguard.com/compilation/kernel-requirements se obtuvieron los requerimientos.
+    \item wireguard-linux-compat patch
+    \item seL4 soporta kernel 4.9[ref], se compiló este kernel con una adaptación de .config file original de los ejemplos camkes-vm
+    \item Buscar referencias para justificar todo. \cite{Laricch2009AAMOP_ICBp3}
+
+    \item Drivers de red compatibles con el hardware utilizado.
+\end{itemize}
+
+\subsection{Generación de una imagen de sistema mediante Buildroot}
+\begin{itemize}
+    \item Se utilizó la versión 2023.02.1 de Buildroot utilizando el kernel modificado.
+    \item Se configuró el sistema de archivos para que contenga los binarios necesarios para el funcionamiento de WireGuard y las herramientas de red.
+\end{itemize}
+
+\subsection{Adaptación del ejemplo \textit{zmq\_samples}}
+\begin{itemize}
+    \item Se adaptó el ejemplo de CAmkES para que funcione con el nuevo kernel y la imagen de sistema generada. Basicamente tocar el CMakeLists.txt
+    \item ZeroMQ. Problema con iperf3 solucionado aumentando tamaño de buffers.
+    \item Incrementar RAM de las VMs.
+\end{itemize}
+
+\subsection{Configuración del \textit{passthrough} de interfaz Ethernet}
+\begin{itemize}
+    \item Interfaz e1000 QEMU. PCI. BARS. IRQ.
+    \item Modificar la configuración de la VMM camkes en seL4 para permitir el acceso a los recursos PCI correspondientes.
+    \item Solución al problema de utilizar dos interfaces de red. Diferentes IRQ.
+    \item Funcionamiento de passthrough (colas).
+\end{itemize}
+
+\section{Integración}
+\begin{itemize}
+    \item Bridge en host. 4 instancias de QEMU. 2 PCs y 2 encriptadores.
+\end{itemize}
+
+
+\section{Validación} %verificar requerimientos
+
+\chapter{Implementación en hardware}
+    \section{SuperMicro SYS-E300-9D}
+    \begin{itemize}
+        \item Supermicro server sys-e300-9d with X11SDV-4C-TLN2F motherboard and intel xeon D-2123IT. Fotito del equipo.
+        \item IPMI, COM1, SoL.
+    \end{itemize}
+    \section{Diseño del experimento}
+    \begin{itemize}
+        \item Que cosas esperamos validar. Rendimiento y que más?
+        \item SetUP.
+    \end{itemize}
+    \section{Procedimiento}
+    \begin{itemize}
+        \item 1. Configurar redirección consola serie.
+        \item 2. Bootear el Linux para obtener los parámetros para configurar el zmq\_samples (lspci).
+        \item 
+    \end{itemize}

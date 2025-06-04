@@ -7,3 +7,6 @@
 !custom-vm-kernel/buildroot-2023.11/output/images/rootfs.cpio
 
 /seL4-CAmkES-L4v-dockerfiles
+
+/hardware/soft
+/qt5

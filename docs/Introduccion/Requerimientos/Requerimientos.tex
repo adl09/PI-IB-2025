@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\usepackage[spanish]{babel}
+\geometry{margin=1in}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textbf{Documento de requerimientos}}
+\fancyfoot[C]{\thepage}
+
+% Title Section
+\title{Documento de requerimientos \\
+\large Sistema de comunicaciones seguras con segmentación virtual de dominios
+}
+\author{Alberto Daniel Lange}
+\date{26 de febrero de 2025}
+
+% Section Formatting
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
+
+\begin{document}
+
+\maketitle
+\begin{abstract}
+    Este documento es una descripción, basada en el método Arcadia, de los requerimientos de usuario del sistema completo. Se describe que necesita el sistema para cumplir las necesidades de los usuarios, las cuales son analizadas en el concepto de operaciones del proyecto. La solución propuesta para cumplir los requerimientos no se detallan aquí, sino en el documento de arquitectura.
+    \begin{center}
+        v1.0
+    \end{center}
+\end{abstract}
+\tableofcontents
+\newpage
+
+
+% \section{Alcance}
+% Este documento tiene como objetivo describir de manera detallada los requerimientos para el encriptador. El contexto del sistema abarca la implementación de un dispositivo encriptador que permite la creación de túneles VPN seguros entre redes preexistentes, asegurando la protección de la información sensible contra accesos no autorizados y ataques. 
+
+\section{Requerimientos}
+\subsection{Requerimientos funcionales}
+\begin{itemize}
+    \item \textbf{Renovación de claves:} cada par de nodos realiza una renovación de claves efímeras cada 120 segundos para asegurar forward-secrecy. Esto significa que, si una clave es comprometida por alguna razón, no se comprometen las comunicaciones anteriores o futuras fuera del intervalo de tiempo especificado.
+    \item \textbf{Seguridad ante intrusiones:} el equipo debe ser capaz de  mitigar la posibilidad de intrusiones de agentes no autorizados vía software, tanto desde Internet o como desde la red local.
+    \item \textbf{Detección de ataques DoS:} el sistema debe ser capaz de detectar y mitigar ataques de denegación de servicio.
+    \item \textbf{Movilidad:} el sistema debe ser capaz de soportar la movilidad de los nodos y permitir a un nodo moverse entre redes sin interrupciones ni renegociaciones de claves. 
+    \item \textbf{Split-tunneling:} el sistema debe ser capaz de permitir y enrutar tráfico de ciertas aplicaciones o servicios por fuera del túnel VPN. 
+    \item \textbf{Segmentación de dominios: } el sistema debe aislar procesos contenidos en un dominio de información, como pueden ser archivos, contenida en otro dominio, independientemente de los privilegios que tenga este proceso.
+\end{itemize}
+
+\subsection{Requerimientos de rendimiento}
+\begin{itemize}
+    \item \textbf{Tasa de transferencia:} el sistema debe ser capaz de lograr, de un nodo a otro, una tasa de transferencia de 950 Mbits/s de datos planos.
+    \item \textbf{Número de nodos:} una red segura debe ser capaz de soportar hasta 250 dispositivos encriptadores, también denominados nodos. 
+\end{itemize}
+
+\subsection{Requerimientos de interfaz}
+\begin{itemize}
+    \item \textbf{Administración:} la configuración de funcionamiento del  encriptador debe poder ser modificada únicamente por un administrador de red autorizado de manera local.
+    \item \textbf{Interfaz de usuario:} el sistema debe ser transparente para el usuario final, es decir, no debe requerir de configuraciones adicionales para este.
+    \item \textbf{Configuración de operación:} el modo de operación en red del sistema y otros parámetros de funcionamiento asociados deben ser configurables únicamente por el administrador de red.
+\end{itemize}
+
+\end{document}

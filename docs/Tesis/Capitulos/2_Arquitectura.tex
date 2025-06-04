@@ -1,0 +1,42 @@
+\chapter{Arquitectura propuesta}
+\section{Descripción de tecnologías}
+\subsection{WireGuard}
+Ejemplo de un archivo de configuración wg0.conf
+\subsection{seL4}
+\subsection{CAmkES}
+
+Trabajar con un microkernel como seL4 implica que la mayoría de las funcionalidades del sistema deben implementarse en el espacio de usuario. Para simplificar este proceso, seL4 incluye CAmkES, un \textit{framework} que facilita el desarrollo de sistemas de software modulares y seguros, diseñados específicamente para ejecutarse sobre seL4.
+
+\textcolor{blue}{Modular refiere a que CAmkES es un modelo de componentes. Seguro refiere a. Detallar el componente VMM, será utilizado después.}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{example-image}
+    \caption{VMM.}
+    \label{diag:camkes_vmm}
+\end{figure}
+
+VirtQueue
+
+Comunicación VM - VMM - seL4 - Hardware
+
+\subsubsection{zmq\_samples}
+Uno de los ejemplos de uso de VMs en CAmkES es el proyecto zmq\_samples, que implementa un sistema de comunicación entre VMs utilizando la librería de mensajería ZeroMQ. Cada VM contiene una interfaz de red virtual eth0 que se conecta a las interfaces eth0 de las demás. En la figura \ref{diag:zmq_samples} se esquematiza el funcionamiento de este sistema.
+
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\textwidth]{example-image}
+    \caption{Esquema de comunicación zmq\_samples.}
+    \label{diag:zmq_samples}
+\end{figure}
+
+
+
+\section{Arquitectura lógica}
+\subsection{Dominios}
+% \subsection{Dominio A - Negro}
+% \subsection{Dominio B - Encriptador}
+% \subsection{Dominio C - Rojo}
+    

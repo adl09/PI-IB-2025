@@ -1,4 +1,8 @@
 # PI-IB-2025
+
+TESIS:
+[Tesis](./docs/Tesis/PI_main.pdf)
+
 camkes-vm-examples-manifest:
 ```yaml
     repo init https://github.com/adl09/camkes-vm-examples-manifest.git

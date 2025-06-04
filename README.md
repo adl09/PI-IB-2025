@@ -1,6 +1,5 @@
 # PI-IB-2025
 
-TESIS:
 [Tesis](./docs/Tesis/PI_main.pdf)
 
 camkes-vm-examples-manifest:

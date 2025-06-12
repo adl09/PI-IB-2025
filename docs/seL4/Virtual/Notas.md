@@ -75,7 +75,7 @@ sudo qemu-system-i386 \
     -kernel images/kernel-ia32-pc99 \
     -initrd images/capdl-loader-image-ia32-pc99 \
     -m 512 \
-    -append 'console=ttyS0' \
+    -append 'console_port=0x2f8 debug_port=0x2f8 console=ttyS1,115200n8' \
     -nographic
 
 -------------------------------------------------------------

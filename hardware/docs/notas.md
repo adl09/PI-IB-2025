@@ -115,3 +115,70 @@ ACPI: MADT_IOAPIC ioapic_id=11 ioapic_addr=0xfec10000 gsib=40
 ACPI: Not recording this IOAPIC, only support 1
 ACPI: MADT_IOAPIC ioapic_id=12 ioapic_addr=0xfec18000 gsib=48
 ACPI: Not recording this IOAPIC, only support 1
+
+
+## =============================================
+10-06-25
+
+../init-build.sh -DCAMKES_VM_APP=minimal_64
+ninja
+
+Para ejecutar seL4-VM
+
+sudo qemu-system-i386 \
+    -accel kvm \
+    -cpu host \
+    -kernel images/kernel-ia32-pc99 \
+    -initrd images/capdl-loader-image-ia32-pc99 \
+    -m 512 \
+    -append 'console_port=0x2f8 debug_port=0x2f8 console=ttyS1,115200n8'
+
+
+En BIOS deshabilité:
+Chipset-->NorthBridge-->IntelVT-d-->DMA Passthrough
+PCH SATA y sSATA
+
+SoutBridge-->
+Legacy USB Support
+PORT60/64 emulation
+
+# PRUEBA
+- Para ver si el problema de no ver el dump de la VM linux en seL4 es que no me lo muestra pero anda o si se cuelga seL4
+- Corro el helloworld de seL4 en hardware.
+https://docs.sel4.systems/Tutorials/hello-world
+
+Funciona, proximo paso: un hello camkes --> FUNCIONA
+Proximo paso: camkes-vm-linux ejemplo (esto usa el linux default de seL4) --> problemas de buildeo (corro)
+
+PRUEBO QEMU
+
+sudo qemu-system-x86_64 \
+    -machine q35,accel=kvm \
+    -cpu host \
+    -m 2G \
+    -kernel camkes-vm-examples-manifest/build_zmq/images/kernel-x86_64-pc99 \
+    -initrd camkes-vm-examples-manifest/build_zmq/images/capdl-loader-image-x86_64-pc99 \
+    -append "console_port=0x3f8" \
+    -nographic \
+    -serial mon:stdio \
+    -device intel-iommu,intremap=off \
+    -device e1000e,mac=00:00:00:00:00:01,id=network0.0,netdev=network0,addr=0x3 \
+    -netdev tap,ifname=tap_inA,id=network0,script=no,downscript=no \
+    -device e1000e,mac=00:00:00:00:00:02,id=network1.0,netdev=network1,addr=0x4 \
+    -netdev tap,ifname=tap_outA,id=network1,script=no,downscript=no
+
+
+16:43
+Modificados:
+/home/alberto/Documentos/PI-IB-2025/camkes-vm-examples-manifest/kernel/src/arch/x86/64/head.S
+/home/alberto/Documentos/PI-IB-2025/camkes-vm-examples-manifest/kernel/src/arch/x86/kernel/cmdline.c
+/home/alberto/Documentos/PI-IB-2025/camkes-vm-examples-manifest/kernel/src/arch/x86/kernel/cmdline.h
+
+Vueltos a original porque no funcionó...
+
+
+../init-build.sh -DCAMKES_VM_APP=zmq_samples -DRELEASE=ON
+https://lists.sel4.systems/hyperkitty/list/devel@sel4.systems/thread/66GTW5KCPDMIYIJMKNOEY6RLXUCYALDV/#4B75E6TFPHV7TOKI3JR7K2K4EZHY4S2E
+NO MUESTRA SALIDA
+
+

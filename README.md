@@ -23,4 +23,4 @@ It includes the following forked repositories:
 - https://github.com/adl09/camkes-vm.git
 
 # Custom-VM-Kernel Tutorial
-For instructions on building and using the custom VM kernel, see the [Custom-VM-Kernel README](./custom-vm-kernel_repeated/README.md).
+For instructions on building and using the custom VM kernel, see the [Custom-VM-Kernel README](./custom-vm-kernel/README.md).

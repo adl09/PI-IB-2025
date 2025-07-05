@@ -13,6 +13,34 @@
 % que necesite
 \usepackage{ibextra}
 \usepackage{subcaption}
+
+
+\usepackage{todonotes}
+\usepackage{pdfcomment}
+\usepackage{listings}
+\usepackage{xcolor}  % for coloring
+\renewcommand{\lstlistingname}{Código}
+\renewcommand{\lstlistlistingname}{Índice de códigos}
+
+\lstset{
+  language=C,                   % Idioma del código
+  basicstyle=\ttfamily\small,  % Fuente monoespaciada pequeña
+  keywordstyle=\color{blue}\bfseries, % Palabras clave en azul y negrita
+  commentstyle=\color{gray},   % Comentarios en gris
+  stringstyle=\color{red},     % Cadenas en rojo
+  numbers=left,                % Numerar líneas a la izquierda
+  numberstyle=\tiny,           % Tamaño de los números de línea
+  numbersep=5pt,               % Separación de los números
+  backgroundcolor=\color{white}, % Fondo blanco
+  frame=single,                % Marco alrededor del código
+  breaklines=true,             % Romper líneas largas
+  captionpos=b,                % Colocar el título debajo del código
+  literate={á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1 {ñ}{{\~n}}1 {Ñ}{{\~N}}1, % Soporte para caracteres especiales
+  extendedchars=true,
+  inputencoding=utf8
+}
+
+
 %\usepackage{hyphen-spanis}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%% Informacion sobre la tesis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -71,6 +99,10 @@ A todos los telequitos
 \include{Capitulos/2_Arquitectura}
 
 \include{Capitulos/3_Estrategia_Modelos}
+
+\include{Capitulos/4_Implementacion_Virtual}
+
+\include{Capitulos/5_Implementacion_hardware}
 
 \include{Capitulos/Index_idea}
 

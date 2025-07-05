@@ -2,6 +2,17 @@
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
 
+\bibitem{camkes_vm}
+seL4 Project.
+\newblock Camkes vmm.
+\newblock \url{https://docs.sel4.systems/projects/camkes-vm/}, 2024.
+\newblock (Accedido el 4 de julio de 2025).
+
+\bibitem{wireguard-compilation}
+WireGuard, J. A.~D.
+\newblock Building directly in tree.
+\newblock \url{https://www.wireguard.com/compilation/}.
+
 \bibitem{Laricch2009AAMOP_ICBp3}
 Laricchia, G., Armitage, S., K\"{o}ver, A., Murtagh, D.~J.
 \newblock Ionizing collisions by positrons and positronium impact on the inert atoms.

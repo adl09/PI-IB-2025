@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "guest_memory_util.h": "c",
+        "gen_config.h": "c",
+        "bootinfo_types.h": "c",
+        "attribute.h": "c",
+        "zf_log.h": "c",
+        "ioreg.h": "c",
+        "pci_helper.h": "c"
+    }
+}

@@ -4,22 +4,15 @@ En el ámbito de las comunicaciones, es fundamental contar con un sistema capaz 
 
 Se han desarrollado soluciones privativas al problema descrito. Sin embargo, la inexistencia de \textit{back-doors} y mecanismos de vigilancia es algo que no puede ser verificado por completo en dichas soluciones. Es por esto que en áreas como defensa y servicio diplomático es de interés contar con soluciones completamente auditables, que no dependan de licencias de exportación. A su vez, que la funcionalidad y validación formal del equipo no dependa de las funciones criptográficas utilizadas, y que estas puedan ser provistas o implementadas por el usuario final.
 
-\noindent\rule{\textwidth}{0.4pt}
-Borrador:
+\pdfcomment{Este trabajo propone un abordaje novedoso a las soluciones de encriptación de redes, respondiendo a la necesidad de una solución propia y auditable.}
 
-Este trabajo propone un abordaje novedoso a las soluciones de encriptación de redes, respondiendo a la necesidad de una solución propia y auditable\dots
+\pdfcomment{Validar la viabilidad de realizar segmentación virtual de dominios.}
 
-Objetivos:
+\pdfcomment{Realizar una prueba de concepto del enfoque propuesto.}
 
-\begin{itemize}
-    \item Validar la viabilidad de realizar segmentación virtual de dominios.
-    \item Realizar una prueba de concepto del enfoque propuesto.
-    \item Implementar una propuesta de solución auditable y documentada.
-\end{itemize}
+\pdfcomment{Implementar una propuesta de solución auditable y documentada.}
 
-Método ARCADIA
-
-\noindent\rule{\textwidth}{0.4pt}
+\pdfcomment{Método ARCADIA}
 
 \clearpage
 
@@ -48,14 +41,14 @@ La encriptación de las comunicaciones garantiza la confidencialidad de las mism
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{example-image-a}
+        \includegraphics[width=\textwidth]{../figs/1_sim_encr.png}
         \caption{Encriptación simétrica}
         \label{fig:simetrica}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{example-image-b}
+        \includegraphics[width=\textwidth]{../figs/1_asim_encr.png}
         \caption{Encriptación asimétrica}
         \label{fig:asimetrica}
     \end{subfigure}
@@ -232,7 +225,7 @@ Trabajar con un microkernel como seL4 implica que la mayoría de las funcionalid
 
 \subsubsection{zmq\_samples}
 Uno de los ejemplos de uso de VMs en CAmkES es el proyecto zmq\_samples, que implementa un sistema de comunicación entre VMs utilizando la librería de mensajería ZeroMQ. Cada VM contiene una interfaz de red virtual eth0 que se conecta a las interfaces eth0 de las demás. En la figura \ref{diag:zmq_samples} se esquematiza el funcionamiento de este sistema.
-
+\pdfcomment{esto va en otro lado}
 
 \begin{figure}[h!]
     \centering

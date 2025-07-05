@@ -1,36 +1,49 @@
 \chapter{Arquitectura propuesta}
 
+Este capítulo tiene como objetivo introducir la propuesta de solución planteada para el encriptador.
+
 \section{Arquitectura lógica}
 
-\noindent\rule{\textwidth}{0.4pt}
+Un hipervisor es un software que permite la creación y ejecución de múltiples máquinas virtuales, las cuales se ejecutan sobre hardware compartido de manera aislada e independiente. El hipervisor gestiona los recursos de hardware para cada máquina virtual según sea necesario, además provee una interfaz de comunicación entre las máquinas virtuales y el hardware.
 
-Borrador:
+El diseño propuesto está basado en la utilización de un hipervisor, el cual administra tres máquinas virtuales denominados dominios. En la figura \ref{fig:arquitectura_logica} se muestra un esquema de la arquitectura propuesta donde se presenta tanto la lógica interna del dispositivo a través de la interconexión de los dominios como la interacción con la red externa al encriptador.
 
-\begin{itemize}
-    \item Definir los criterios de diseño.
-    \item Presentar la arquitectura lógica del sistema.
-    \item Describir los componentes principales y sus interacciones.
-    \item Incluir diagramas de componentes y de despliegue.
-    \item Argumentar las decisiones de diseño tomadas.
-\end{itemize}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\textwidth]{../figs/2_arquitectura_logica.png}
+    \caption{Esquema de arquitectura lógica del encriptador.}
+    \label{fig:arquitectura_logica}
+\end{figure}
 
-\subsection{Dominios}
 
-\noindent\rule{\textwidth}{0.4pt}
+\subsection{Dominio A - Negro}
+El dominio A cuenta con tres interfaces de red, una física que lo conecta con el puerto de internet y dos virtuales que lo conectan con los dominios B y C.
+Esta entidad actúa como primer firewall para el tráfico proveniente de internet y direcciona el tráfico hacia B o C según la dirección IP de origen de los paquetes. Si el tráfico proviene de otro sitio dentro de la red segura, este se direcciona hacia B para ser desencriptado. En el caso de ser tráfico proveniente de cualquier otro servicio de internet, este se direcciona hacia el dominio C.
+
+\subsection{Dominio B - Encriptador}
+Este dominio cuenta únicamente con dos interfaces virtuales, las cuales conectan a este dominio con A y C. Esta entidad administra el software necesario para el funcionamiento del túnel VPN, gestiona las claves para la conexión con otros nodos y realiza la encriptación/desencriptación de los paquetes salientes/entrantes respectivamente. Como base para la realización de estas funciones la entidad utiliza el software WireGuard.
+La implementación de Wireguard requiere almacenar un par de claves pública y privada propios de cada nodo, además de la clave pública de demás nodos de la red. Estas claves son almacenadas en un archivo de configuración encriptado dentro de este dominio.
+
+\subsection{Dominio C - Rojo}
+Este dominio cuenta con una interfaz de red virtual que lo conecta con el dominio A y una interfaz física que lo conecta a la la red local del sitio. Esta entidad actúa como un segundo firewall para el tráfico proveniente de internet y direcciona el tráfico saliente hacia A o B según la dirección IP de destino de los paquetes provenientes de la red local. Si el tráfico tiene como destino un servicio de internet, este se direcciona hacia A, sin encriptación dedicada. En el caso de tener como destino otro sitio dentro de la red segura, este se direcciona hacia B para ser encriptado.
+
+\pdfcomment{
+Definir los criterios de diseño.
+Presentar la arquitectura lógica del sistema.
+Describir los componentes principales y sus interacciones.
+Incluir diagramas de componentes y de despliegue.
+Argumentar las decisiones de diseño tomadas.
+}
 
 
 
 \section{Arquitectura física}
 
-\noindent\rule{\textwidth}{0.4pt}
-Borrador:
-
-\begin{itemize}
-    \item Describir las conexiones físicas entre los componentes del sistema.
-    \item Passthrough.
-\end{itemize}
-
-\noindent\rule{\textwidth}{0.4pt}
+\pdfcomment{
+Describir las conexiones físicas entre los componentes del sistema.
+Introducir el passthrough.
+Flujo de la interrupción del i40e en seL4 con VT-d y camkes-vm.
+}
 
 \subsection{Hardware}
 

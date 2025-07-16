@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.2.3)  16 JUL 2025 11:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.2.3)  16 JUL 2025 11:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -658,13 +658,7 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 ) (./PI_main.aux
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
- (./Capitulos/Abstract.aux
-LaTeX Info: Redefining \. on input line 7.
-LaTeX Info: Redefining \% on input line 7.
-) (./Capitulos/1_Introduccion.aux
-LaTeX Info: Redefining \. on input line 5.
-LaTeX Info: Redefining \% on input line 5.
-) (./Capitulos/2_Arquitectura.aux) (./Capitulos/3_Estrategia_Modelos.aux) (./Capitulos/4_Implementacion_Virtual.aux) (./Capitulos/5_Implementacion_hardware.aux) (./Capitulos/Index_idea.aux) (./Capitulos/Ap_XX.aux))
+ (./Capitulos/1_Introduccion.aux) (./Capitulos/2_Arquitectura.aux) (./Capitulos/3_Estrategia_Modelos.aux) (./Capitulos/4_Implementacion_Virtual.aux) (./Capitulos/5_Implementacion_hardware.aux) (./Capitulos/Index_idea.aux))
 \openout1 = `PI_main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
@@ -789,106 +783,36 @@ Package: soul-ori 2023-06-14 v3.1 letterspacing/underlining (mf)
 \SOUL@ulht=\dimen298
 ))
 \c@lstlisting=\count352
+ (./PI_main.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
  [1
 
 \openout4 = `PI_main.upa'.
 
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
-
-] [3] [4
-
-] [5
-
-
-] [6
-
-] (./PI_main.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-LaTeX Info: Redefining \. on input line 9.
-LaTeX Info: Redefining \% on input line 9.
-LaTeX Info: Redefining \. on input line 11.
-LaTeX Info: Redefining \% on input line 11.
- [7
-
-
-])
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
 \tf@toc=\write6
 \openout6 = `PI_main.toc'.
 
-LaTeX Info: Redefining \. on input line 88.
-LaTeX Info: Redefining \% on input line 88.
- [8] (./PI_main.lof
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-LaTeX Info: Redefining \. on input line 3.
-LaTeX Info: Redefining \% on input line 3.
-LaTeX Info: Redefining \. on input line 5.
-LaTeX Info: Redefining \% on input line 5.
-)
-\tf@lof=\write7
-\openout7 = `PI_main.lof'.
-
- [9
-
-
-] [10
-
-] (./PI_main.lot
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-LaTeX Info: Redefining \. on input line 3.
-LaTeX Info: Redefining \% on input line 3.
-LaTeX Info: Redefining \. on input line 5.
-LaTeX Info: Redefining \% on input line 5.
-)
-\tf@lot=\write8
-\openout8 = `PI_main.lot'.
-
- [11
-
-]
-\openout2 = `Capitulos/Abstract.aux'.
-
- (./Capitulos/Abstract.tex [12
-
-
-] [13
-
-] [14
-
-]
-LaTeX Info: Redefining \. on input line 9.
-LaTeX Info: Redefining \% on input line 9.
- [15
-
-
-] [16
-
-]
-LaTeX Info: Redefining \. on input line 9.
-LaTeX Info: Redefining \% on input line 9.
-)
+LaTeX Info: Redefining \. on input line 96.
+LaTeX Info: Redefining \% on input line 96.
+ [2]
 \openout2 = `Capitulos/1_Introduccion.aux'.
 
  (./Capitulos/1_Introduccion.tex
 Cap\'{\i }tulo 1.
-[1
-
-
-
-
+[3
 
 
 ]
-<figs/../figs/1_sim_encr.png, id=367, 1423.3175pt x 827.09pt>
+<figs/../figs/1_sim_encr.png, id=237, 1423.3175pt x 827.09pt>
 File: figs/../figs/1_sim_encr.png Graphic file (type png)
 <use figs/../figs/1_sim_encr.png>
 Package pdftex.def Info: figs/../figs/1_sim_encr.png  used on input line 45.
 (pdftex.def)             Requested size: 198.45662pt x 115.31223pt.
-<figs/../figs/1_asim_encr.png, id=369, 1423.3175pt x 827.09pt>
+<figs/../figs/1_asim_encr.png, id=239, 1423.3175pt x 827.09pt>
 File: figs/../figs/1_asim_encr.png Graphic file (type png)
 <use figs/../figs/1_asim_encr.png>
 Package pdftex.def Info: figs/../figs/1_asim_encr.png  used on input line 52.
@@ -896,31 +820,31 @@ Package pdftex.def Info: figs/../figs/1_asim_encr.png  used on input line 52.
 Package hyperref Info: bookmark level for unknown lpcsec defaults to 0 on input line 63.
 LaTeX Info: Redefining \. on input line 65.
 LaTeX Info: Redefining \% on input line 65.
- [2
+ [4
 
 ]
-<figs/../figs/1_diffie-hellmann.png, id=377, 892.33376pt x 507.8975pt>
+<figs/../figs/1_diffie-hellmann.png, id=247, 892.33376pt x 507.8975pt>
 File: figs/../figs/1_diffie-hellmann.png Graphic file (type png)
 <use figs/../figs/1_diffie-hellmann.png>
 Package pdftex.def Info: figs/../figs/1_diffie-hellmann.png  used on input line 71.
 (pdftex.def)             Requested size: 176.40439pt x 100.39972pt.
 LaTeX Info: Redefining \. on input line 84.
 LaTeX Info: Redefining \% on input line 84.
- [3 <./figs/../figs/1_sim_encr.png> <./figs/../figs/1_asim_encr.png> <./figs/../figs/1_diffie-hellmann.png>]
-<figs/../figs/1_overview.png, id=391, 1214.5375pt x 923.45pt>
+ [5 <./figs/../figs/1_sim_encr.png> <./figs/../figs/1_asim_encr.png> <./figs/../figs/1_diffie-hellmann.png>]
+<figs/../figs/1_overview.png, id=262, 1214.5375pt x 923.45pt>
 File: figs/../figs/1_overview.png Graphic file (type png)
 <use figs/../figs/1_overview.png>
 Package pdftex.def Info: figs/../figs/1_overview.png  used on input line 95.
 (pdftex.def)             Requested size: 176.40439pt x 134.11522pt.
 LaTeX Info: Redefining \. on input line 103.
 LaTeX Info: Redefining \% on input line 103.
- [4 <./figs/../figs/1_overview.png>]
-<figs/../figs/1_small_node.png, id=398, 1425.325pt x 766.865pt>
+ [6 <./figs/../figs/1_overview.png>]
+<figs/../figs/1_small_node.png, id=270, 1425.325pt x 766.865pt>
 File: figs/../figs/1_small_node.png Graphic file (type png)
 <use figs/../figs/1_small_node.png>
 Package pdftex.def Info: figs/../figs/1_small_node.png  used on input line 138.
 (pdftex.def)             Requested size: 198.45662pt x 106.7753pt.
-<figs/../figs/1_large_node.png, id=399, 1586.92876pt x 803.0pt>
+<figs/../figs/1_large_node.png, id=271, 1586.92876pt x 803.0pt>
 File: figs/../figs/1_large_node.png Graphic file (type png)
 <use figs/../figs/1_large_node.png>
 Package pdftex.def Info: figs/../figs/1_large_node.png  used on input line 145.
@@ -931,30 +855,30 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Info: Redefining \. on input line 155.
 LaTeX Info: Redefining \% on input line 155.
-[5
+[7
 
 ]
 LaTeX Info: Redefining \. on input line 189.
 LaTeX Info: Redefining \% on input line 189.
- [6 <./figs/../figs/1_small_node.png> <./figs/../figs/1_large_node.png>]
+ [8 <./figs/../figs/1_small_node.png> <./figs/../figs/1_large_node.png>]
 LaTeX Info: Redefining \. on input line 205.
 LaTeX Info: Redefining \% on input line 205.
- [7])
-LaTeX Info: Redefining \. on input line 97.
-LaTeX Info: Redefining \% on input line 97.
- [8
+ [9])
+LaTeX Info: Redefining \. on input line 96.
+LaTeX Info: Redefining \% on input line 96.
+ [10
 
 ]
 \openout2 = `Capitulos/2_Arquitectura.aux'.
 
  (./Capitulos/2_Arquitectura.tex
 Cap\'{\i }tulo 2.
-<figs/../figs/2_arquitectura_logica.png, id=421, 1071.40276pt x 540.8205pt>
+<figs/../figs/2_arquitectura_logica.png, id=296, 1071.40276pt x 540.8205pt>
 File: figs/../figs/2_arquitectura_logica.png Graphic file (type png)
 <use figs/../figs/2_arquitectura_logica.png>
 Package pdftex.def Info: figs/../figs/2_arquitectura_logica.png  used on input line 13.
 (pdftex.def)             Requested size: 330.76328pt x 166.95943pt.
-[9
+[11
 
 
 
@@ -962,12 +886,12 @@ Package pdftex.def Info: figs/../figs/2_arquitectura_logica.png  used on input l
  <./figs/../figs/2_arquitectura_logica.png>]
 LaTeX Info: Redefining \. on input line 56.
 LaTeX Info: Redefining \% on input line 56.
- [10])
+ [12])
 \openout2 = `Capitulos/3_Estrategia_Modelos.aux'.
 
  (./Capitulos/3_Estrategia_Modelos.tex
 Cap\'{\i }tulo 3.
-<figs/../figs/gns3_1.png, id=442, 1131.22626pt x 748.7975pt>
+<figs/../figs/gns3_1.png, id=317, 1131.22626pt x 748.7975pt>
 File: figs/../figs/gns3_1.png Graphic file (type png)
 <use figs/../figs/gns3_1.png>
 Package pdftex.def Info: figs/../figs/gns3_1.png  used on input line 23.
@@ -975,27 +899,27 @@ Package pdftex.def Info: figs/../figs/gns3_1.png  used on input line 23.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[11
+[13
 
 
 
 
 
 ]
-<figs/../figs/gns3_2.png, id=448, 1560.83125pt x 642.4pt>
+<figs/../figs/gns3_2.png, id=325, 1560.83125pt x 642.4pt>
 File: figs/../figs/gns3_2.png Graphic file (type png)
 <use figs/../figs/gns3_2.png>
 Package pdftex.def Info: figs/../figs/gns3_2.png  used on input line 40.
 (pdftex.def)             Requested size: 352.8155pt x 145.21011pt.
 LaTeX Info: Redefining \. on input line 49.
 LaTeX Info: Redefining \% on input line 49.
- [12 <./figs/../figs/gns3_1.png> <./figs/../figs/gns3_2.png>]
-<example-image.pdf, id=456, 321.2pt x 240.9pt>
+ [14 <./figs/../figs/gns3_1.png> <./figs/../figs/gns3_2.png>]
+<example-image.pdf, id=334, 321.2pt x 240.9pt>
 File: example-image.pdf Graphic file (type pdf)
 <use example-image.pdf>
 Package pdftex.def Info: example-image.pdf  used on input line 52.
 (pdftex.def)             Requested size: 220.50885pt x 165.38675pt.
-<figs/../figs/3_model4.png, id=458, 633.36626pt x 250.9375pt>
+<figs/../figs/3_model4.png, id=336, 633.36626pt x 250.9375pt>
 File: figs/../figs/3_model4.png Graphic file (type png)
 <use figs/../figs/3_model4.png>
 Package pdftex.def Info: figs/../figs/3_model4.png  used on input line 68.
@@ -1005,18 +929,24 @@ Package pdftex.def Info: figs/../figs/3_model4.png  used on input line 68.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 )
-LaTeX Info: Redefining \. on input line 101.
-LaTeX Info: Redefining \% on input line 101.
- [13 </usr/share/texlive/texmf-dist/tex/latex/mwe/example-image.pdf>]
-LaTeX Info: Redefining \. on input line 101.
-LaTeX Info: Redefining \% on input line 101.
- [14 <./figs/../figs/3_model4.png>]
+LaTeX Info: Redefining \. on input line 100.
+LaTeX Info: Redefining \% on input line 100.
+ [15 </usr/share/texlive/texmf-dist/tex/latex/mwe/example-image.pdf>]
+LaTeX Info: Redefining \. on input line 100.
+LaTeX Info: Redefining \% on input line 100.
+ [16 <./figs/../figs/3_model4.png>]
 \openout2 = `Capitulos/4_Implementacion_Virtual.aux'.
 
  (./Capitulos/4_Implementacion_Virtual.tex
 Cap\'{\i }tulo 4.
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 16.
-[15
+
+Package natbib Warning: Citation `camkes_vm' on page 17 undefined on input line 24.
+
+
+Package natbib Warning: Citation `wireguard-compilation' on page 17 undefined on input line 26.
+
+[17
 
 
 
@@ -1026,92 +956,52 @@ File: lstlang1.sty 2023/02/27 1.9 listings language file
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 ))
-LaTeX Info: Redefining \. on input line 103.
-LaTeX Info: Redefining \% on input line 103.
- [16]
-LaTeX Info: Redefining \. on input line 103.
-LaTeX Info: Redefining \% on input line 103.
- [17]
+LaTeX Info: Redefining \. on input line 102.
+LaTeX Info: Redefining \% on input line 102.
+ [18]
+LaTeX Info: Redefining \. on input line 102.
+LaTeX Info: Redefining \% on input line 102.
+ [19]
 \openout2 = `Capitulos/5_Implementacion_hardware.aux'.
 
- (./Capitulos/5_Implementacion_hardware.tex [18
+ (./Capitulos/5_Implementacion_hardware.tex [20
 
 
 
 
 ]
 Cap\'{\i }tulo 5.
-) [19]
+) [21]
 \openout2 = `Capitulos/Index_idea.aux'.
 
  (./Capitulos/Index_idea.tex)
-\openout2 = `Capitulos/Ap_XX.aux'.
 
- (./Capitulos/Ap_XX.tex [20
+Package natbib Warning: There were undefined citations.
 
-
-
-
-
-
-
-]
-Ap\'{e}ndice A.
-) [21] [22
-
-
-
-] (./PI_main.bbl (./PI_main.brf)
-\tf@brf=\write9
-\openout9 = `PI_main.brf'.
-
-) [23
-
-] [24
-
-] [25
-
-
-
-] [26
-
-] [27
-
-
-] [28
-
-] (./PI_main.aux
+(./PI_main.aux
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
- (./Capitulos/Abstract.aux
-LaTeX Info: Redefining \. on input line 7.
-LaTeX Info: Redefining \% on input line 7.
-) (./Capitulos/1_Introduccion.aux
-LaTeX Info: Redefining \. on input line 5.
-LaTeX Info: Redefining \% on input line 5.
-) (./Capitulos/2_Arquitectura.aux) (./Capitulos/3_Estrategia_Modelos.aux) (./Capitulos/4_Implementacion_Virtual.aux) (./Capitulos/5_Implementacion_hardware.aux) (./Capitulos/Index_idea.aux) (./Capitulos/Ap_XX.aux))
+ (./Capitulos/1_Introduccion.aux) (./Capitulos/2_Arquitectura.aux) (./Capitulos/3_Estrategia_Modelos.aux) (./Capitulos/4_Implementacion_Virtual.aux) (./Capitulos/5_Implementacion_hardware.aux) (./Capitulos/Index_idea.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `PI_main.out' has not changed.
-(rerunfilecheck)             Checksum: CCC2D696207081F495A26FC35BD897F6;8857.
-Package rerunfilecheck Info: File `PI_main.brf' has not changed.
-(rerunfilecheck)             Checksum: 614468B557B0943CD6FE7D3EA6172982;118.
+(rerunfilecheck)             Checksum: FCD24D67282E9B70D0562BF38128FBDB;7772.
  ) 
 Here is how much of TeX's memory you used:
- 31491 strings out of 474222
- 599829 string characters out of 5748734
+ 31276 strings out of 474222
+ 595640 string characters out of 5748734
  1997975 words of memory out of 5000000
- 53022 multiletter control sequences out of 15000+600000
- 571835 words of font info for 83 fonts, out of 8000000 for 9000
+ 52890 multiletter control sequences out of 15000+600000
+ 566560 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  105i,12n,107p,920b,1315s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb>
-Output written on PI_main.pdf (44 pages, 1042706 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb>
+Output written on PI_main.pdf (21 pages, 1013829 bytes).
 PDF statistics:
- 660 PDF objects out of 1000 (max. 8388607)
- 560 compressed objects within 6 object streams
- 142 named destinations out of 1000 (max. 500000)
- 476 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 475 PDF objects out of 1000 (max. 8388607)
+ 401 compressed objects within 5 object streams
+ 98 named destinations out of 1000 (max. 500000)
+ 404 words of extra memory for PDF output out of 10000 (max. 10000000)
 

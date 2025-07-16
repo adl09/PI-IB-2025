@@ -4,7 +4,7 @@ Este capítulo tiene como objetivo introducir la propuesta de solución plantead
 
 \section{Arquitectura lógica}
 
-Un hipervisor es un software que permite la creación y ejecución de múltiples máquinas virtuales, las cuales se ejecutan sobre hardware compartido de manera aislada e independiente. El hipervisor gestiona los recursos de hardware para cada máquina virtual según sea necesario, además provee una interfaz de comunicación entre las máquinas virtuales y el hardware.
+Un hipervisor es un \textit{software} que permite la creación y ejecución de múltiples máquinas virtuales, las cuales se ejecutan sobre \textit{hardware} compartido de manera aislada e independiente. El hipervisor gestiona los recursos de \textit{hardware} para cada máquina virtual según sea necesario, además provee una interfaz de comunicación entre las máquinas virtuales y el \textit{hardware}.
 
 El diseño propuesto está basado en la utilización de un hipervisor, el cual administra tres máquinas virtuales denominados dominios. En la figura \ref{fig:arquitectura_logica} se muestra un esquema de la arquitectura propuesta donde se presenta tanto la lógica interna del dispositivo a través de la interconexión de los dominios como la interacción con la red externa al encriptador.
 
@@ -38,6 +38,12 @@ Argumentar las decisiones de diseño tomadas.
 
 
 \section{Arquitectura física}
+
+El \textit{hardware} elegido para la implementación del encriptador es el SuperServer E300-9D de Supermicro, entre sus principales características, cuenta con un procesador Intel Xeon D-1521, 32 GB de memoria RAM y dos interfaces de red \pdfcomment{(x) buscar cuál} de 10Gb. Este procesador posee arquitectura x86 y cuenta con soporte para virtualización VT-x y VT-d, lo que permite la creación de máquinas virtuales con acceso directo a los dispositivos de \textit{hardware}. \pdfcomment{citar esto último}.
+
+El sistema operativo base del encriptador es seL4 funcionando como hipervisor, este utiliza el VMM \textit{camkes-vm}. A continuación se detalla el funcionamiento e interacción de los componentes descritos hasta el momento.
+
+
 
 \pdfcomment{
 Describir las conexiones físicas entre los componentes del sistema.

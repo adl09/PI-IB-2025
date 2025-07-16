@@ -4,38 +4,55 @@
     \item Se realizará en completamente en host. ¿Por qué? Simplicidad de implementación.
 \end{itemize}
 \section{Procedimiento} % Proceso de: linux_QEMU-linux_QEMU -> 3VMsel4_QEMU. 3VMsel4_QEMU
-  
+\pdfcomment{
+Describir que necesita seL4 para funcionar como queremos}
+
+\subsection{Generación de una imagen de sistema mediante Buildroot}
+Buildroot es una herramienta que permite generar imágenes de sistema de archivos o \textit{root filesystem} minimalistas para sistemas embebidos. Es útil para crear sistemas operativos ligeros y personalizados, adaptados a las necesidades específicas de un proyecto. Se utilizó Buildroot para generar una imagen de sistema que contenga los binarios necesarios para el funcionamiento de WireGuard y otras herramientas de red requeridas.
+En este trabajo se provee el archivo de configuración utilizado para la versión 2023.02.1 de Buildroot y se detalla a continuación el procedimiento para replicar la imagen.
+\pdfcomment{
+Citar o referenciar el repositorio PI-2025-IB de alguna forma}
+
+\begin{lstlisting}[caption={Generación de imagen de sistema con Buildroot.}, label={lst:buildroot_procedure}]
+git clone --branch 2023.11 https://github.com/buildroot/buildroot.git
+cp .buildroot-config ./buildroot/.config
+cd buildroot
+make
+\end{lstlisting}
+
 \subsection{Construcción de un kernel Linux con soporte para WireGuard}
 Actualmente, el VMM de seL4 implementado en CAmkES para la arquitectura x86 cuenta con soporte probado para el kernel Linux 4.9. En este trabajo se utilizó una versión limpia de este kernel, obtenida de la rama \textit{stable} de Linux 4.9.y, en particular la versión 4.9.337, que se encuentra disponible en el repositorio oficial de Linux. Al momento de configurar la compilación del kernel, se tuvo en cuenta la compatibilidad con el hipervisor seL4, cuyos requisitos se encuentran documentados en la página oficial del proyecto \textit{camkes-vm} para seL4 \cite{camkes_vm}.
 
-El soporte nativo para WireGuard fue añadido al kernel Linux en la versión 5.6, sin embargo, el repositorio \textit{wireguard-linux-compat} proporciona un parche que permite compilar WireGuard en versiones anteriores del kernel, como la utilizada \cite{wireguard-compilation}.
+El soporte nativo para WireGuard fue añadido al kernel Linux en la versión 5.6, sin embargo, el repositorio \textit{wireguard-linux-compat} provee un parche que permite compilar WireGuard en versiones anteriores del kernel, como la utilizada \cite{wireguard-compilation}.
 
-\begin{lstlisting}[language=bash, caption={Parche wireguard-linux-compat para kernel 4.9}]
+\begin{lstlisting}[language=bash, caption={Parche wireguard-linux-compat para el kernel Linux 4.9.337}, label={lst:wireguard_patch}]
 git clone https://git.zx2c4.com/wireguard-linux-compat
 ./wireguard-linux-compat/kernel-tree-scripts/jury-rig.sh ./linux-stable
 \end{lstlisting}
 
-\begin{itemize}
-    \item De www.wireguard.com/compilation/kernel-requirements se obtuvieron los requerimientos.
-    \item wireguard-linux-compat patch
-    \item seL4 soporta kernel 4.9[ref], se compiló este kernel con una adaptación de .config file original de los ejemplos camkes-vm
-    \item Buscar referencias para justificar todo. \cite{Laricch2009AAMOP_ICBp3}
 
-    \item Drivers de red compatibles con el hardware utilizado.
-\end{itemize}
+\subsection{Adaptación del proyecto \textit{zmq\_samples}}
+\subsubsection{Utilización de kernel modificado}
+En la configuración por defecto de este proyecto se cuenta con las imágenes de sistema para un kernel Linux 4.8.16 en cada VM. Para utilizar las imágenes de sistema generadas en pasos anteriores se realizaron modificaciones en el archivo \textit{CMakeLists.txt} del proyecto, ubicado en el directorio \textit{camkes-vm-examples-manifest/projects/vm-examples/apps/x86/zmq\_samples/}. En este archivo se definieron las rutas de los archivos a utilizar mediante las siguientes variables CMake:
 
-\subsection{Generación de una imagen de sistema mediante Buildroot}
-\begin{itemize}
-    \item Se utilizó la versión 2023.02.1 de Buildroot utilizando el kernel modificado.
-    \item Se configuró el sistema de archivos para que contenga los binarios necesarios para el funcionamiento de WireGuard y las herramientas de red.
-\end{itemize}
+\begin{lstlisting}[caption={Variables CMakeLists.txt del proyecto zmq\_samples}, label={lst:zmq_samples_cmake}]
+set(kernel_file "/host/custom-vm-kernel/linux-stable/arch/x86/boot/bzImage")
+set(rootfs_file "/host/custom-vm-kernel/buildroot/output/images/rootfs.cpio")
+\end{lstlisting}
 
-\subsection{Adaptación del ejemplo \textit{zmq\_samples}}
+\subsubsection{Memoria RAM de las VMs}
+En seL4, toda la memoria física se inicia como \textit{untyped memory}, lo que significa que no está asignada a ningún objeto específico. A medida que se crean objetos, como VMMs, se hacen asignaciones de memoria, convirtiendo parte de la memoria \textit{untyped} en memoria \textit{typed}. Una característica importante de la gestión de memoria en seL4 es que la memoria \textit{typed} no puede ser redefinida una vez que se ha asignado a un objeto. 
+
+
+
+Cuando se hace uso del VMM \textit{camkes-vm} se tienen los siguientes parámetros de configuración directamente relacionados al uso de memoria de un \textit{guest}:
 \begin{itemize}
-    \item Se adaptó el ejemplo de CAmkES para que funcione con el nuevo kernel y la imagen de sistema generada. Basicamente tocar el CMakeLists.txt
-    \item ZeroMQ. Problema con iperf3 solucionado aumentando tamaño de buffers.
-    \item Incrementar RAM de las VMs.
+    \item \texttt{simple\_untypedN\_pool}: 
+    \item \texttt{heap\_size}: 
+    \item \texttt{guest\_ram\_mb}: 
 \end{itemize}
+Por defecto se definen 128 MB de memoria RAM para cada VM.
+
 
 \subsection{Configuración del \textit{passthrough} de interfaz Ethernet}
 \begin{itemize}

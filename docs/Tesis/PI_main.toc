@@ -25,7 +25,6 @@
 \contentsline {subsection}{\numberline {1.4.1}WireGuard}{8}{subsection.1.4.1}%
 \contentsline {subsection}{\numberline {1.4.2}seL4}{8}{subsection.1.4.2}%
 \contentsline {subsection}{\numberline {1.4.3}CAmkES}{8}{subsection.1.4.3}%
-\contentsline {subsubsection}{zmq\_samples}{8}{section*.23}%
 \contentsline {chapter}{\numberline {2}Arquitectura propuesta}{9}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Arquitectura lógica}{9}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Dominio A - Negro}{9}{subsection.2.1.1}%
@@ -38,21 +37,22 @@
 \contentsline {section}{\numberline {3.2}Introduciendo la arquitectura lógica del encriptador}{12}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Utilizando seL4 como hipervisor}{13}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Implementando el encriptador en seL4}{13}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Resumen?}{13}{section.3.5}%
 \contentsline {chapter}{\numberline {4}Implementación en entorno virtualizado}{15}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Diseño del experimento}{15}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Procedimiento}{15}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Construcción de un kernel Linux con soporte para WireGuard}{15}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Generación de una imagen de sistema mediante Buildroot}{16}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Adaptación del ejemplo \textit {zmq\_samples}}{16}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.1}Generación de una imagen de sistema mediante Buildroot}{15}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Construcción de un kernel Linux con soporte para WireGuard}{15}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Adaptación del proyecto \textit {zmq\_samples}}{16}{subsection.4.2.3}%
+\contentsline {subsubsection}{Utilización de kernel modificado}{16}{section*.33}%
+\contentsline {subsubsection}{Memoria RAM de las VMs}{16}{section*.34}%
 \contentsline {subsection}{\numberline {4.2.4}Configuración del \textit {passthrough} de interfaz Ethernet}{16}{subsection.4.2.4}%
-\contentsline {section}{\numberline {4.3}Integración}{16}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Validación}{16}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Implementación en hardware}{17}{chapter.5}%
-\contentsline {section}{\numberline {5.1}SuperMicro SYS-E300-9D}{17}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Diseño del experimento}{17}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Procedimiento}{17}{section.5.3}%
-\contentsline {chapter}{\numberline {A}Apéndice I}{19}{appendix.Alph1}%
-\contentsline {chapter}{Bibliograf{\'{\i }}a}{21}{section*.32}%
-\contentsline {chapter}{Publicaciones asociadas}{23}{section*.34}%
-\contentsline {chapter}{Agradecimientos}{25}{section*.36}%
+\contentsline {section}{\numberline {4.3}Integración}{17}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Validación}{17}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Implementación en hardware}{19}{chapter.5}%
+\contentsline {section}{\numberline {5.1}SuperMicro SYS-E300-9D}{19}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Diseño del experimento}{19}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Procedimiento}{19}{section.5.3}%
+\contentsline {chapter}{\numberline {A}Apéndice I}{21}{appendix.Alph1}%
+\contentsline {chapter}{Bibliograf{\'{\i }}a}{23}{section*.35}%
+\contentsline {chapter}{Publicaciones asociadas}{25}{section*.37}%
+\contentsline {chapter}{Agradecimientos}{27}{section*.39}%

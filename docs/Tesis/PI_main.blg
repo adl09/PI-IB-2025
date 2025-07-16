@@ -11,44 +11,44 @@ A level-1 auxiliary file: Capitulos/5_Implementacion_hardware.aux
 A level-1 auxiliary file: Capitulos/Index_idea.aux
 A level-1 auxiliary file: Capitulos/Ap_XX.aux
 Database file #1: mibib.bib
-You've used 3 entries,
+You've used 2 entries,
             2634 wiz_defined-function locations,
-            1052 strings with 9942 characters,
-and the built_in function-call counts, 863 in all, are:
-= -- 52
-> -- 24
-< -- 2
-+ -- 12
-- -- 6
-* -- 29
-:= -- 99
-add.period$ -- 11
-call.type$ -- 3
-change.case$ -- 6
+            1044 strings with 9678 characters,
+and the built_in function-call counts, 428 in all, are:
+= -- 27
+> -- 8
+< -- 0
++ -- 4
+- -- 2
+* -- 6
+:= -- 56
+add.period$ -- 7
+call.type$ -- 2
+change.case$ -- 3
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 86
-empty$ -- 96
-format.name$ -- 7
-if$ -- 194
+cite$ -- 2
+duplicate$ -- 40
+empty$ -- 51
+format.name$ -- 2
+if$ -- 93
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 24
-newline$ -- 21
-num.names$ -- 3
-pop$ -- 52
+int.to.str$ -- 2
+missing$ -- 11
+newline$ -- 16
+num.names$ -- 2
+pop$ -- 25
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 25
+skip$ -- 12
 stack$ -- 0
-substring$ -- 4
-swap$ -- 53
-text.length$ -- 2
+substring$ -- 2
+swap$ -- 24
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 4
-width$ -- 4
-write$ -- 37
+while$ -- 2
+width$ -- 3
+write$ -- 25

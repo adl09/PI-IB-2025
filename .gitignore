@@ -1,9 +1,7 @@
 /camkes-vm-examples-manifest
-!camkes-vm-examples-manifest/build_zmq/images/capdl-loader-image-x86_64-pc99
-!camkes-vm-examples-manifest/build_zmq/images/kernel-x86_64-pc99
-
 /new
-
+/custom-vm-kernel
+/custom-vm-kernel
 /custom-vm-kernel/linux-stable
 /custom-vm-kernel/buildroot
 /custom-vm-kernel/wireguard-linux-compat

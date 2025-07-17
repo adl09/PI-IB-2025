@@ -34,9 +34,9 @@
 \contentsline {subsection}{\numberline {4.2.1}Generación de una imagen de sistema mediante Buildroot}{17}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Construcción de un kernel Linux con soporte para WireGuard}{17}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}Adaptación del proyecto \textit {zmq\_samples}}{18}{subsection.4.2.3}%
-\contentsline {subsubsection}{Utilización de kernel modificado}{18}{section*.23}%
-\contentsline {subsubsection}{Memoria RAM de las VMs}{18}{section*.24}%
-\contentsline {subsection}{\numberline {4.2.4}Configuración del \textit {passthrough} de interfaz Ethernet}{18}{subsection.4.2.4}%
+\contentsline {subsubsection}{Utilización de kernel modificado}{18}{section*.24}%
+\contentsline {subsubsection}{Gestión de memoria de las VMs}{18}{section*.25}%
+\contentsline {subsubsection}{Configuración del \textit {passthrough} de interfaz Ethernet}{19}{section*.27}%
 \contentsline {section}{\numberline {4.3}Integración}{19}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Validación}{19}{section.4.4}%
 \contentsline {chapter}{\numberline {5}Implementación en hardware}{21}{chapter.5}%

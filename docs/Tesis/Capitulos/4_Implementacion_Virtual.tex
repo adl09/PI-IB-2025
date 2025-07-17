@@ -22,6 +22,8 @@ make
 
 \subsection{Construcción de un kernel Linux con soporte para WireGuard}
 Actualmente, el VMM de seL4 implementado en CAmkES para la arquitectura x86 cuenta con soporte probado para el kernel Linux 4.9. En este trabajo se utilizó una versión limpia de este kernel, obtenida de la rama \textit{stable} de Linux 4.9.y, en particular la versión 4.9.337, que se encuentra disponible en el repositorio oficial de Linux. Al momento de configurar la compilación del kernel, se tuvo en cuenta la compatibilidad con el hipervisor seL4, cuyos requisitos se encuentran documentados en la página oficial del proyecto \textit{camkes-vm} para seL4 \cite{camkes_vm}.
+\pdfcomment{
+Agregar codigo para compilar el kernel}
 
 El soporte nativo para WireGuard fue añadido al kernel Linux en la versión 5.6, sin embargo, el repositorio \textit{wireguard-linux-compat} provee un parche que permite compilar WireGuard en versiones anteriores del kernel, como la utilizada \cite{wireguard-compilation}.
 
@@ -40,21 +42,19 @@ set(kernel_file "/host/custom-vm-kernel/linux-stable/arch/x86/boot/bzImage")
 set(rootfs_file "/host/custom-vm-kernel/buildroot/output/images/rootfs.cpio")
 \end{lstlisting}
 
-\subsubsection{Memoria RAM de las VMs}
-En seL4, toda la memoria física se inicia como \textit{untyped memory}, lo que significa que no está asignada a ningún objeto específico. A medida que se crean objetos, como VMMs, se hacen asignaciones de memoria, convirtiendo parte de la memoria \textit{untyped} en memoria \textit{typed}. Una característica importante de la gestión de memoria en seL4 es que la memoria \textit{typed} no puede ser redefinida una vez que se ha asignado a un objeto. 
-
-
+\subsubsection{Gestión de memoria de las VMs}
+En seL4, toda la memoria física se inicia como \textit{untyped memory}, lo que significa que no está asignada a ningún objeto específico. A medida que se crean objetos, como VMMs, se realizan asignaciones de memoria, convirtiendo parte de la memoria \textit{untyped} en memoria \textit{typed}. Una característica importante de la gestión de memoria en seL4 es que la alocación es estática para objetos en kernel. Esto implica que, al crear una VM, se debe definir la cantidad de memoria que se le asignará desde el inicio. Esta cantidad no puede ser modificada posteriormente, lo que requiere una planificación cuidadosa para evitar problemas de memoria insuficiente durante la ejecución de las VMs. \pdfcomment{Acá puedo citar al manual de seL4 sección 2.4}
 
 Cuando se hace uso del VMM \textit{camkes-vm} se tienen los siguientes parámetros de configuración directamente relacionados al uso de memoria de un \textit{guest}:
 \begin{itemize}
-    \item \texttt{simple\_untypedN\_pool}: 
-    \item \texttt{heap\_size}: 
-    \item \texttt{guest\_ram\_mb}: 
+    \item \texttt{simple\_untypedN\_pool}: CAmkES realiza una prealocación de memoria \textit{untyped} para ser gestionada por cada VM. Aquí \texttt{N} representa una máscara sobre la cantidad de bits que definen el tamaño del bloque de memoria. Por ejemplo, \texttt{vm0.simple\_untyped23\_pool = 10} indica que se reservan 10 bloques de memoria de 2\textsuperscript{23} bytes (8 MB) para el componente \texttt{vm0}. Una forma de dar flexibilidad al sistema es definir \textit{pools} de memoria \textit{untyped} de diferentes tamaños. 
+    \item \texttt{heap\_size}: este parámetro define el tamaño del \textit{heap} del componente VMM. Es memoria reservada para el uso del VMM si este requiere por ejemplo guardar información de estado o utilizar buffers de datos. La asignación \texttt{vm0.heap\_size = 0x40000} define 256 KiB de memoria para el \textit{heap} del componente VMM correspondiente a \texttt{vm0}.
+    \item \texttt{guest\_ram\_mb}: la memoria RAM disponible para la VM es simplemente la asignación de memoria \textit{untyped} disponible en \textit{pools} reservados para la misma. Por ejemplo, \texttt{vm0.guest\_ram\_mb = 128} indica que se asignarán 128 MB de memoria RAM a la VM \texttt{vm0}. Es importante tener en cuenta que este valor no puede superar a la cantidad de memoria \textit{untyped} reservada para la VM.
 \end{itemize}
-Por defecto se definen 128 MB de memoria RAM para cada VM.
+Por defecto se definen\dots
 
 
-\subsection{Configuración del \textit{passthrough} de interfaz Ethernet}
+\subsubsection{Configuración del \textit{passthrough} de interfaz Ethernet}
 \begin{itemize}
     \item Interfaz e1000 QEMU. PCI. BARS. IRQ.
     \item Modificar la configuración de la VMM camkes en seL4 para permitir el acceso a los recursos PCI correspondientes.

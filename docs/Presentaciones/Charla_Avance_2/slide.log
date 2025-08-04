@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.2.3)  16 JUL 2025 09:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.2.3)  4 AUG 2025 16:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -854,42 +854,42 @@ LaTeX Info: Redefining \% on input line 12.
 )
 \openout1 = `slide.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 73.
-LaTeX Font Info:    Trying to load font information for FML+futm on input line 73.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 52.
+LaTeX Font Info:    Trying to load font information for FML+futm on input line 52.
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 73.
-LaTeX Font Info:    Trying to load font information for FMS+futm on input line 73.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 52.
+LaTeX Font Info:    Trying to load font information for FMS+futm on input line 52.
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 73.
-LaTeX Font Info:    Trying to load font information for FMX+futm on input line 73.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 52.
+LaTeX Font Info:    Trying to load font information for FMX+futm on input line 52.
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    ... okay on input line 52.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -944,45 +944,45 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 73.
+Package hyperref Info: Link coloring OFF on input line 52.
 \symnumbers=\mathgroup9
 \sympureletters=\mathgroup10
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  T1/futs/m/n --> T1/futs/m/n on input line 73.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 73.
+(Font)                  T1/futs/m/n --> T1/futs/m/n on input line 52.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 52.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  T1/futs/bx/n --> T1/futs/b/n on input line 73.
+(Font)                  T1/futs/bx/n --> T1/futs/b/n on input line 52.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/futs/bx/n --> T1/futs/b/n on input line 73.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 73.
+(Font)                  T1/futs/bx/n --> T1/futs/b/n on input line 52.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 52.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 73.
+(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 52.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 73.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 73.
+(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 52.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 52.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  T1/futs/m/it --> T1/futs/m/it on input line 73.
+(Font)                  T1/futs/m/it --> T1/futs/m/it on input line 52.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/futs/m/it --> T1/futs/m/it on input line 73.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 73.
+(Font)                  T1/futs/m/it --> T1/futs/m/it on input line 52.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 52.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 73.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 52.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 73.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 52.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/futs/m/n --> T1/futs/b/n on input line 73.
+(Font)                  T1/futs/m/n --> T1/futs/b/n on input line 52.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/futs/m/it --> T1/futs/b/it on input line 73.
+(Font)                  T1/futs/m/it --> T1/futs/b/it on input line 52.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  T1/futs/m/n --> T1/futs/b/n on input line 73.
+(Font)                  T1/futs/m/n --> T1/futs/b/n on input line 52.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/futs/b/n --> T1/futs/b/n on input line 73.
+(Font)                  T1/futs/b/n --> T1/futs/b/n on input line 52.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 73.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 52.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/futs/m/it --> T1/futs/b/it on input line 73.
+(Font)                  T1/futs/m/it --> T1/futs/b/it on input line 52.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 73.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 52.
  (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -996,59 +996,59 @@ Dictionary: translator-numbers-dictionary, Language: English
 ) (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 73.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 73.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 52.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 52.
 \c@lstlisting=\count376
-LaTeX Info: Redefining \. on input line 73.
-LaTeX Info: Redefining \% on input line 73.
+LaTeX Info: Redefining \. on input line 52.
+LaTeX Info: Redefining \% on input line 52.
  (./slide.nav)
-<images/institucionales_cnea.png, id=87, 45.89145pt x 45.89145pt>
+<images/institucionales_cnea.png, id=79, 45.89145pt x 45.89145pt>
 File: images/institucionales_cnea.png Graphic file (type png)
 <use images/institucionales_cnea.png>
-Package pdftex.def Info: images/institucionales_cnea.png  used on input line 106.
+Package pdftex.def Info: images/institucionales_cnea.png  used on input line 85.
 (pdftex.def)             Requested size: 29.87569pt x 29.87599pt.
-LaTeX Font Info:    Trying to load font information for FML+futmi on input line 106.
+LaTeX Font Info:    Trying to load font information for FML+futmi on input line 85.
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 106.
+(Font)              scaled to size 10.07397pt on input line 85.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 106.
+(Font)              scaled to size 7.63599pt on input line 85.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 106.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 106.
+(Font)              scaled to size 5.51999pt on input line 85.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 85.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 106.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 85.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 106.
+(Font)              scaled to size 10.07397pt on input line 85.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 106.
+(Font)              scaled to size 7.63599pt on input line 85.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 106.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 106.
+(Font)              scaled to size 5.51999pt on input line 85.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 85.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-<images/institucionales_IB.png, id=89, 56.00925pt x 56.00925pt>
+<images/institucionales_IB.png, id=81, 56.00925pt x 56.00925pt>
 File: images/institucionales_IB.png Graphic file (type png)
 <use images/institucionales_IB.png>
-Package pdftex.def Info: images/institucionales_IB.png  used on input line 106.
+Package pdftex.def Info: images/institucionales_IB.png  used on input line 85.
 (pdftex.def)             Requested size: 29.87569pt x 29.87617pt.
-<images/institucionales_INVAP.png, id=90, 2569.6pt x 672.5125pt>
+<images/institucionales_INVAP.png, id=82, 2569.6pt x 672.5125pt>
 File: images/institucionales_INVAP.png Graphic file (type png)
 <use images/institucionales_INVAP.png>
-Package pdftex.def Info: images/institucionales_INVAP.png  used on input line 106.
+Package pdftex.def Info: images/institucionales_INVAP.png  used on input line 85.
 (pdftex.def)             Requested size: 49.79231pt x 13.0221pt.
-<images/institucionales_cuyo.png, id=91, 39.7485pt x 39.7485pt>
+<images/institucionales_cuyo.png, id=83, 39.7485pt x 39.7485pt>
 File: images/institucionales_cuyo.png Graphic file (type png)
 <use images/institucionales_cuyo.png>
-Package pdftex.def Info: images/institucionales_cuyo.png  used on input line 106.
+Package pdftex.def Info: images/institucionales_cuyo.png  used on input line 85.
 (pdftex.def)             Requested size: 29.87569pt x 29.87558pt.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
@@ -1063,16 +1063,22 @@ LaTeX Info: Redefining \% on input line 1.
 ) [3
 
 ]
-<images/conops.png, id=401, 1055.945pt x 832.10875pt>
+<images/conops.png, id=365, 1055.945pt x 832.10875pt>
 File: images/conops.png Graphic file (type png)
 <use images/conops.png>
-Package pdftex.def Info: images/conops.png  used on input line 135.
-(pdftex.def)             Requested size: 179.25418pt x 141.25346pt.
+Package pdftex.def Info: images/conops.png  used on input line 106.
+(pdftex.def)             Requested size: 199.1693pt x 156.94688pt.
  [4
 
- <./images/conops.png>] [5
+ <./images/conops.png>]
+<images/gns3_2.png, id=448, 1560.83125pt x 642.4pt>
+File: images/gns3_2.png Graphic file (type png)
+<use images/gns3_2.png>
+Package pdftex.def Info: images/gns3_2.png  used on input line 129.
+(pdftex.def)             Requested size: 264.89314pt x 109.02031pt.
+ [5
 
-] [6
+ <./images/gns3_2.png>] [6
 
 ] (./slide.toc
 LaTeX Info: Redefining \. on input line 1.
@@ -1080,150 +1086,102 @@ LaTeX Info: Redefining \% on input line 1.
 ) [7
 
 ]
-<images/cia.png, id=765, 972.63374pt x 815.045pt>
-File: images/cia.png Graphic file (type png)
-<use images/cia.png>
-Package pdftex.def Info: images/cia.png  used on input line 179.
-(pdftex.def)             Requested size: 179.25114pt x 150.20888pt.
+<images/sel4scheme.png, id=698, 377.41pt x 214.8025pt>
+File: images/sel4scheme.png Graphic file (type png)
+<use images/sel4scheme.png>
+Package pdftex.def Info: images/sel4scheme.png  used on input line 163.
+(pdftex.def)             Requested size: 239.00558pt x 136.0277pt.
  [8
 
- <./images/cia.png>]
-<images/simetric.png, id=855, 1177.39874pt x 697.60625pt>
-File: images/simetric.png Graphic file (type png)
-<use images/simetric.png>
-Package pdftex.def Info: images/simetric.png  used on input line 204.
-(pdftex.def)             Requested size: 179.25114pt x 106.20117pt.
+ <./images/sel4scheme.png>]
+<example-image.pdf, id=781, 321.2pt x 240.9pt>
+File: example-image.pdf Graphic file (type pdf)
+<use example-image.pdf>
+Package pdftex.def Info: example-image.pdf  used on input line 187.
+(pdftex.def)             Requested size: 159.33604pt x 119.505pt.
  [9
 
- <./images/simetric.png>]
-<images/asimetric.png, id=946, 1329.96875pt x 744.7825pt>
-File: images/asimetric.png Graphic file (type png)
-<use images/asimetric.png>
-Package pdftex.def Info: images/asimetric.png  used on input line 231.
-(pdftex.def)             Requested size: 199.1693pt x 111.53072pt.
+ </usr/share/texlive/texmf-dist/tex/latex/mwe/example-image.pdf>]
+File: example-image.pdf Graphic file (type pdf)
+<use example-image.pdf>
+Package pdftex.def Info: example-image.pdf  used on input line 210.
+(pdftex.def)             Requested size: 179.25114pt x 134.43991pt.
  [10
 
- <./images/asimetric.png>]
-<images/Diffie-Hellman_Key_Exchange.png, id=1036, 803.0pt x 1207.51125pt>
-File: images/Diffie-Hellman_Key_Exchange.png Graphic file (type png)
-<use images/Diffie-Hellman_Key_Exchange.png>
-Package pdftex.def Info: images/Diffie-Hellman_Key_Exchange.png  used on input line 257.
-(pdftex.def)             Requested size: 107.55177pt x 161.71722pt.
+]
+File: example-image.pdf Graphic file (type pdf)
+<use example-image.pdf>
+Package pdftex.def Info: example-image.pdf  used on input line 234.
+(pdftex.def)             Requested size: 179.25114pt x 134.43991pt.
  [11
-
- <./images/Diffie-Hellman_Key_Exchange.png>]
-<images/NSA_Red-Gray-Black_diagram.png, id=1127, 649.42625pt x 654.445pt>
-File: images/NSA_Red-Gray-Black_diagram.png Graphic file (type png)
-<use images/NSA_Red-Gray-Black_diagram.png>
-Package pdftex.def Info: images/NSA_Red-Gray-Black_diagram.png  used on input line 280.
-(pdftex.def)             Requested size: 138.62367pt x 139.69434pt.
- [12
-
- <./images/NSA_Red-Gray-Black_diagram.png>]
-<images/hyperv.png, id=1217, 587.19376pt x 730.73pt>
-File: images/hyperv.png Graphic file (type png)
-<use images/hyperv.png>
-Package pdftex.def Info: images/hyperv.png  used on input line 315.
-(pdftex.def)             Requested size: 111.53261pt x 138.79553pt.
- [13
-
- <./images/hyperv.png>] (./slide.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-) [14
-
-]
-<images/plan.png, id=1405, 1876.00874pt x 789.95125pt>
-File: images/plan.png Graphic file (type png)
-<use images/plan.png>
-Package pdftex.def Info: images/plan.png  used on input line 332.
-(pdftex.def)             Requested size: 382.40771pt x 161.01291pt.
- [15
-
- <./images/plan.png>] (./slide.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-) [16
-
-]
-<images/arcadia.png, id=1592, 1016.79875pt x 769.87625pt>
-File: images/arcadia.png Graphic file (type png)
-<use images/arcadia.png>
-Package pdftex.def Info: images/arcadia.png  used on input line 347.
-(pdftex.def)             Requested size: 231.03711pt x 174.9298pt.
-
-Overfull \vbox (8.64716pt too high) detected at line 347
- []
-
-[17
-
- <./images/arcadia.png>]
-File: images/conops.png Graphic file (type png)
-<use images/conops.png>
-Package pdftex.def Info: images/conops.png  used on input line 385.
-(pdftex.def)             Requested size: 179.25114pt x 141.25346pt.
- [18
-
-]
-<images/smallmode_conops.png, id=1771, 1425.325pt x 766.865pt>
-File: images/smallmode_conops.png Graphic file (type png)
-<use images/smallmode_conops.png>
-Package pdftex.def Info: images/smallmode_conops.png  used on input line 411.
-(pdftex.def)             Requested size: 179.25114pt x 96.43126pt.
-<images/bigmode_conops.png, id=1772, 1586.92876pt x 803.0pt>
-File: images/bigmode_conops.png Graphic file (type png)
-<use images/bigmode_conops.png>
-Package pdftex.def Info: images/bigmode_conops.png  used on input line 411.
-(pdftex.def)             Requested size: 179.25114pt x 90.69505pt.
- [19
-
- <./images/smallmode_conops.png> <./images/bigmode_conops.png>] [20
-
-]
-<images/arquitectura.png, id=1954, 803.0pt x 419.5675pt>
-File: images/arquitectura.png Graphic file (type png)
-<use images/arquitectura.png>
-Package pdftex.def Info: images/arquitectura.png  used on input line 470.
-(pdftex.def)             Requested size: 239.00558pt x 124.87889pt.
- [21
-
- <./images/arquitectura.png>] [22
-
-] [23
-
-] [24
 
 ] (./slide.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-) [25
+) [12
 
 ]
-<images/gns3_1.png, id=2344, 1131.22626pt x 748.7975pt>
-File: images/gns3_1.png Graphic file (type png)
-<use images/gns3_1.png>
-Package pdftex.def Info: images/gns3_1.png  used on input line 556.
-(pdftex.def)             Requested size: 219.08743pt x 145.01517pt.
- [26
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 250.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 250.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 250.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 250.
+ [13
 
- <./images/gns3_1.png>]
-<images/gns3_2.png, id=2434, 1560.83125pt x 642.4pt>
+]
 File: images/gns3_2.png Graphic file (type png)
 <use images/gns3_2.png>
-Package pdftex.def Info: images/gns3_2.png  used on input line 569.
-(pdftex.def)             Requested size: 378.42044pt x 155.7475pt.
- [27
+Package pdftex.def Info: images/gns3_2.png  used on input line 268.
+(pdftex.def)             Requested size: 239.00558pt x 98.3653pt.
+ [14
 
- <./images/gns3_2.png>] (./slide.toc
+]
+File: example-image.pdf Graphic file (type pdf)
+<use example-image.pdf>
+Package pdftex.def Info: example-image.pdf  used on input line 285.
+(pdftex.def)             Requested size: 119.50279pt x 89.62784pt.
+ [15
+
+] [16
+
+] [17
+
+] [18
+
+]
+<images/3_model4.png, id=1600, 633.36626pt x 250.9375pt>
+File: images/3_model4.png Graphic file (type png)
+<use images/3_model4.png>
+Package pdftex.def Info: images/3_model4.png  used on input line 314.
+(pdftex.def)             Requested size: 239.00558pt x 94.69098pt.
+ [19
+
+ <./images/3_model4.png>] [20
+
+] [21
+
+]
+LaTeX Font Info:    Trying to load font information for TS1+futs on input line 346.
+ (/usr/share/texlive/texmf-dist/tex/latex/fourier/ts1futs.fd
+File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
+)
+File: example-image.pdf Graphic file (type pdf)
+<use example-image.pdf>
+Package pdftex.def Info: example-image.pdf  used on input line 346.
+(pdftex.def)             Requested size: 159.33604pt x 119.505pt.
+ [22
+
+] (./slide.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-) [28
+) [23
 
-] [29
+] [24
 
-] [30
-
-] [31
+] [25
 
 ]
 \tf@nav=\write5
@@ -1245,18 +1203,18 @@ L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 25929 strings out of 474222
- 483337 string characters out of 5748734
- 1957975 words of memory out of 5000000
- 47570 multiletter control sequences out of 15000+600000
- 627811 words of font info for 93 fonts, out of 8000000 for 9000
+ 25902 strings out of 474222
+ 482365 string characters out of 5748734
+ 1955975 words of memory out of 5000000
+ 47554 multiletter control sequences out of 15000+600000
+ 647943 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 101i,20n,107p,613b,887s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb>
-Output written on slide.pdf (31 pages, 1741660 bytes).
+ 101i,20n,107p,601b,885s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb>
+Output written on slide.pdf (25 pages, 725834 bytes).
 PDF statistics:
- 2905 PDF objects out of 2984 (max. 8388607)
- 1840 compressed objects within 19 object streams
- 69 named destinations out of 1000 (max. 500000)
- 211 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2194 PDF objects out of 2487 (max. 8388607)
+ 1388 compressed objects within 14 object streams
+ 55 named destinations out of 1000 (max. 500000)
+ 150 words of extra memory for PDF output out of 10000 (max. 10000000)
 

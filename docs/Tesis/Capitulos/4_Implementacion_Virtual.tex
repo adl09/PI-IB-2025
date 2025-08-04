@@ -49,13 +49,16 @@ Cuando se hace uso del VMM \textit{camkes-vm} se tienen los siguientes parámetr
 \begin{itemize}
     \item \texttt{simple\_untypedN\_pool}: CAmkES realiza una prealocación de memoria \textit{untyped} para ser gestionada por cada VM. Aquí \texttt{N} representa una máscara sobre la cantidad de bits que definen el tamaño del bloque de memoria. Por ejemplo, \texttt{vm0.simple\_untyped23\_pool = 10} indica que se reservan 10 bloques de memoria de 2\textsuperscript{23} bytes (8 MB) para el componente \texttt{vm0}. Una forma de dar flexibilidad al sistema es definir \textit{pools} de memoria \textit{untyped} de diferentes tamaños. 
     \item \texttt{heap\_size}: este parámetro define el tamaño del \textit{heap} del componente VMM. Es memoria reservada para el uso del VMM si este requiere por ejemplo guardar información de estado o utilizar buffers de datos. La asignación \texttt{vm0.heap\_size = 0x40000} define 256 KiB de memoria para el \textit{heap} del componente VMM correspondiente a \texttt{vm0}.
-    \item \texttt{guest\_ram\_mb}: la memoria RAM disponible para la VM es simplemente la asignación de memoria \textit{untyped} disponible en \textit{pools} reservados para la misma. Por ejemplo, \texttt{vm0.guest\_ram\_mb = 128} indica que se asignarán 128 MB de memoria RAM a la VM \texttt{vm0}. Es importante tener en cuenta que este valor no puede superar a la cantidad de memoria \textit{untyped} reservada para la VM.
+    \item \texttt{guest\_ram\_mb}: la memoria RAM disponible para la VM es simplemente la asignación de memoria \textit{untyped} disponible en \textit{pools} reservados para la misma. Por ejemplo, \texttt{vm0.guest\_ram\_mb = 128} indica que se asignarán 128 MB de memoria RAM a la VM \texttt{vm0}. Debe tenerse en cuenta que este valor no puede superar a la cantidad de memoria \textit{untyped} reservada para la VM.
 \end{itemize}
 Por defecto se definen\dots
 \pdfcomment{Continuará}
 
 
-\subsubsection{Configuración del \textit{passthrough} de interfaz Ethernet}
+\subsubsection{Configuración del \textit{passthrough} de controlador Ethernet}
+
+
+
 \begin{itemize}
     \item Interfaz e1000 QEMU. PCI. BARS. IRQ.
     \item Modificar la configuración de la VMM camkes en seL4 para permitir el acceso a los recursos PCI correspondientes.

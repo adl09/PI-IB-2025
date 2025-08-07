@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.2.3)  4 AUG 2025 16:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.2.3)  7 AUG 2025 11:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1002,7 +1002,7 @@ LaTeX Font Info:    Redeclaring math accent \widetilde on input line 52.
 LaTeX Info: Redefining \. on input line 52.
 LaTeX Info: Redefining \% on input line 52.
  (./slide.nav)
-<images/institucionales_cnea.png, id=79, 45.89145pt x 45.89145pt>
+<images/institucionales_cnea.png, id=81, 45.89145pt x 45.89145pt>
 File: images/institucionales_cnea.png Graphic file (type png)
 <use images/institucionales_cnea.png>
 Package pdftex.def Info: images/institucionales_cnea.png  used on input line 85.
@@ -1035,17 +1035,17 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 85.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-<images/institucionales_IB.png, id=81, 56.00925pt x 56.00925pt>
+<images/institucionales_IB.png, id=83, 56.00925pt x 56.00925pt>
 File: images/institucionales_IB.png Graphic file (type png)
 <use images/institucionales_IB.png>
 Package pdftex.def Info: images/institucionales_IB.png  used on input line 85.
 (pdftex.def)             Requested size: 29.87569pt x 29.87617pt.
-<images/institucionales_INVAP.png, id=82, 2569.6pt x 672.5125pt>
+<images/institucionales_INVAP.png, id=84, 2569.6pt x 672.5125pt>
 File: images/institucionales_INVAP.png Graphic file (type png)
 <use images/institucionales_INVAP.png>
 Package pdftex.def Info: images/institucionales_INVAP.png  used on input line 85.
 (pdftex.def)             Requested size: 49.79231pt x 13.0221pt.
-<images/institucionales_cuyo.png, id=83, 39.7485pt x 39.7485pt>
+<images/institucionales_cuyo.png, id=85, 39.7485pt x 39.7485pt>
 File: images/institucionales_cuyo.png Graphic file (type png)
 <use images/institucionales_cuyo.png>
 Package pdftex.def Info: images/institucionales_cuyo.png  used on input line 85.
@@ -1063,7 +1063,7 @@ LaTeX Info: Redefining \% on input line 1.
 ) [3
 
 ]
-<images/conops.png, id=365, 1055.945pt x 832.10875pt>
+<images/conops.png, id=314, 1055.945pt x 832.10875pt>
 File: images/conops.png Graphic file (type png)
 <use images/conops.png>
 Package pdftex.def Info: images/conops.png  used on input line 106.
@@ -1071,10 +1071,10 @@ Package pdftex.def Info: images/conops.png  used on input line 106.
  [4
 
  <./images/conops.png>]
-<images/gns3_2.png, id=448, 1560.83125pt x 642.4pt>
+<images/gns3_2.png, id=378, 1560.83125pt x 642.4pt>
 File: images/gns3_2.png Graphic file (type png)
 <use images/gns3_2.png>
-Package pdftex.def Info: images/gns3_2.png  used on input line 129.
+Package pdftex.def Info: images/gns3_2.png  used on input line 126.
 (pdftex.def)             Requested size: 264.89314pt x 109.02031pt.
  [5
 
@@ -1086,32 +1086,32 @@ LaTeX Info: Redefining \% on input line 1.
 ) [7
 
 ]
-<images/sel4scheme.png, id=698, 377.41pt x 214.8025pt>
+<images/sel4scheme.png, id=574, 377.41pt x 214.8025pt>
 File: images/sel4scheme.png Graphic file (type png)
 <use images/sel4scheme.png>
-Package pdftex.def Info: images/sel4scheme.png  used on input line 163.
+Package pdftex.def Info: images/sel4scheme.png  used on input line 159.
 (pdftex.def)             Requested size: 239.00558pt x 136.0277pt.
  [8
 
  <./images/sel4scheme.png>]
-<example-image.pdf, id=781, 321.2pt x 240.9pt>
+<example-image.pdf, id=638, 321.2pt x 240.9pt>
 File: example-image.pdf Graphic file (type pdf)
 <use example-image.pdf>
-Package pdftex.def Info: example-image.pdf  used on input line 187.
+Package pdftex.def Info: example-image.pdf  used on input line 182.
 (pdftex.def)             Requested size: 159.33604pt x 119.505pt.
  [9
 
  </usr/share/texlive/texmf-dist/tex/latex/mwe/example-image.pdf>]
 File: example-image.pdf Graphic file (type pdf)
 <use example-image.pdf>
-Package pdftex.def Info: example-image.pdf  used on input line 210.
+Package pdftex.def Info: example-image.pdf  used on input line 204.
 (pdftex.def)             Requested size: 179.25114pt x 134.43991pt.
  [10
 
 ]
 File: example-image.pdf Graphic file (type pdf)
 <use example-image.pdf>
-Package pdftex.def Info: example-image.pdf  used on input line 234.
+Package pdftex.def Info: example-image.pdf  used on input line 225.
 (pdftex.def)             Requested size: 179.25114pt x 134.43991pt.
  [11
 
@@ -1122,66 +1122,94 @@ LaTeX Info: Redefining \% on input line 1.
 
 ]
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 250.
+(Font)              scaled to size 9.19998pt on input line 241.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 250.
+(Font)              scaled to size 6.99199pt on input line 241.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 250.
+(Font)              scaled to size 9.19998pt on input line 241.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 250.
+(Font)              scaled to size 6.99199pt on input line 241.
  [13
 
 ]
 File: images/gns3_2.png Graphic file (type png)
 <use images/gns3_2.png>
-Package pdftex.def Info: images/gns3_2.png  used on input line 268.
+Package pdftex.def Info: images/gns3_2.png  used on input line 259.
 (pdftex.def)             Requested size: 239.00558pt x 98.3653pt.
  [14
 
 ]
-File: example-image.pdf Graphic file (type pdf)
-<use example-image.pdf>
-Package pdftex.def Info: example-image.pdf  used on input line 285.
-(pdftex.def)             Requested size: 119.50279pt x 89.62784pt.
+<images/gns3_1.png, id=1027, 1131.22626pt x 748.7975pt>
+File: images/gns3_1.png Graphic file (type png)
+<use images/gns3_1.png>
+Package pdftex.def Info: images/gns3_1.png  used on input line 277.
+(pdftex.def)             Requested size: 239.00558pt x 158.20044pt.
  [15
 
-] [16
-
-] [17
-
-] [18
+ <./images/gns3_1.png>] [16
 
 ]
-<images/3_model4.png, id=1600, 633.36626pt x 250.9375pt>
-File: images/3_model4.png Graphic file (type png)
-<use images/3_model4.png>
-Package pdftex.def Info: images/3_model4.png  used on input line 314.
-(pdftex.def)             Requested size: 239.00558pt x 94.69098pt.
- [19
-
- <./images/3_model4.png>] [20
-
-] [21
-
-]
-LaTeX Font Info:    Trying to load font information for TS1+futs on input line 346.
- (/usr/share/texlive/texmf-dist/tex/latex/fourier/ts1futs.fd
-File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
-)
 File: example-image.pdf Graphic file (type pdf)
 <use example-image.pdf>
-Package pdftex.def Info: example-image.pdf  used on input line 346.
+Package pdftex.def Info: example-image.pdf  used on input line 302.
+(pdftex.def)             Requested size: 119.50279pt x 89.62784pt.
+ [17
+
+]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 314.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+) [18
+
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}] [19
+
+]
+<images/3_model4.png, id=1343, 633.36626pt x 250.9375pt>
+File: images/3_model4.png Graphic file (type png)
+<use images/3_model4.png>
+Package pdftex.def Info: images/3_model4.png  used on input line 338.
+(pdftex.def)             Requested size: 239.00558pt x 94.69098pt.
+ [20
+
+ <./images/3_model4.png>] [21
+
+]
+<images/pingAB.png, id=1470, 1927.2pt x 1084.05pt>
+File: images/pingAB.png Graphic file (type png)
+<use images/pingAB.png>
+Package pdftex.def Info: images/pingAB.png  used on input line 369.
+(pdftex.def)             Requested size: 318.67209pt x 179.24098pt.
+
+Overfull \vbox (12.95834pt too high) detected at line 369
+ []
+
+[22
+
+ <./images/pingAB.png>]
+File: example-image.pdf Graphic file (type pdf)
+<use example-image.pdf>
+Package pdftex.def Info: example-image.pdf  used on input line 394.
 (pdftex.def)             Requested size: 159.33604pt x 119.505pt.
- [22
+LaTeX Font Info:    Trying to load font information for TS1+futs on input line 394.
+ (/usr/share/texlive/texmf-dist/tex/latex/fourier/ts1futs.fd
+File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
+) [23
+
+]
+File: example-image.pdf Graphic file (type pdf)
+<use example-image.pdf>
+Package pdftex.def Info: example-image.pdf  used on input line 394.
+(pdftex.def)             Requested size: 159.33604pt x 119.505pt.
+ [24
 
 ] (./slide.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-) [23
+) [25
 
-] [24
+] [26
 
-] [25
+] [27
 
 ]
 \tf@nav=\write5
@@ -1203,18 +1231,18 @@ L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 25902 strings out of 474222
- 482365 string characters out of 5748734
- 1955975 words of memory out of 5000000
- 47554 multiletter control sequences out of 15000+600000
- 647943 words of font info for 115 fonts, out of 8000000 for 9000
+ 25961 strings out of 474222
+ 483763 string characters out of 5748734
+ 1953975 words of memory out of 5000000
+ 47602 multiletter control sequences out of 15000+600000
+ 648738 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  101i,20n,107p,601b,885s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb>
-Output written on slide.pdf (25 pages, 725834 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on slide.pdf (27 pages, 1183086 bytes).
 PDF statistics:
- 2194 PDF objects out of 2487 (max. 8388607)
- 1388 compressed objects within 14 object streams
- 55 named destinations out of 1000 (max. 500000)
- 150 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1853 PDF objects out of 2073 (max. 8388607)
+ 986 compressed objects within 10 object streams
+ 59 named destinations out of 1000 (max. 500000)
+ 160 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -25,7 +25,7 @@ Este modelo permite identificar y resolver problemas básicos de configuración 
     \label{diag:wg_minimal}
 \end{figure}
 
-En una siguiente iteración de este modelo se descartó la utilización de GNS3 y se optó por instanciar cada VM mediante QEMU % cosa que GNS3 ya lo hace en backend...
+En una siguiente iteración de este modelo se descartó la utilización de GNS3 y se optó por instanciar cada VM mediante QEMU% cosa que GNS3 ya lo hace en backend...
 , adquiriendo mayor control sobre los dispositivos de red emulados. Un ejemplo de esto es la posibilidad de observar los parámetros PCI de las interfaces de red, lo cual es relevante para la implementación del \textit{passthrough} de las mismas en la solución final.
 
 En este modelo, además, se valida el correcto funcionamiento tanto del kernel de Linux como del \textit{filesystem} inicial, modificados para incluir soporte para WireGuard. Estas imágenes serán posteriormente utilizadas en cada VMM gestionada por seL4.

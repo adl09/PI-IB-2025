@@ -155,7 +155,7 @@ sudo qemu-system-x86_64 \
     -append "console=ttyS0" \
     -nographic \
     -kernel custom-vm-kernel/linux-stable/arch/x86/boot/bzImage \
-    -initrd custom-vm-kernel/buildroot-2023.11/output/images/rootfs.cpio \
+    -initrd custom-vm-kernel/buildroot/output/images/rootfs.cpio \
     -device e1000e,mac=00:00:00:00:00:10,id=network0.0,netdev=network0,addr=0x3 \
     -netdev tap,ifname=tap_PC1,id=network0,script=no,downscript=no
 ```
@@ -173,7 +173,7 @@ sudo qemu-system-x86_64 \
     -append "console=ttyS0" \
     -nographic \
     -kernel custom-vm-kernel/linux-stable/arch/x86/boot/bzImage \
-    -initrd custom-vm-kernel/buildroot-2023.11/output/images/rootfs.cpio \
+    -initrd custom-vm-kernel/buildroot/output/images/rootfs.cpio \
     -device e1000e,mac=00:00:00:00:00:11,id=network0.0,netdev=network0,addr=0x3 \
     -netdev tap,ifname=tap_PC2,id=network0,script=no,downscript=no
 ```

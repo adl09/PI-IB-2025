@@ -1,5 +1,5 @@
 \babel@toc {spanish}{}\relax 
 \beamer@sectionintoc {1}{Introducción}{3}{0}{1}
 \beamer@sectionintoc {2}{Revisión bibliográfica}{7}{0}{2}
-\beamer@sectionintoc {3}{Desarrollo}{12}{0}{3}
-\beamer@sectionintoc {4}{Conclusiones}{25}{0}{4}
+\beamer@sectionintoc {3}{Desarrollo}{11}{0}{3}
+\beamer@sectionintoc {4}{Conclusiones}{27}{0}{4}

@@ -119,7 +119,7 @@ subsubsectionstyle=show/shaded/hide]
     \begin{figure}
         \centering
         \includegraphics[width=0.95\textwidth]{images/gns3_2.png}
-        \caption{Implementación de la propuesta de solución en GNS3.} 
+        \caption{Simulación de la propuesta de solución en GNS3.} 
     \end{figure}
     \end{column}
 \end{columns}
@@ -131,26 +131,32 @@ subsubsectionstyle=show/shaded/hide]
         \item Implementación sobre hardware.
     \end{itemize}
 
+    \note{Estos son los temas que van a ser cubiertos en esta charla.}
 \end{frame}
 
 \section{Revisión bibliográfica}
 
 \begin{frame}{seL4}
     \begin{columns}
-        \begin{column}{0.35\textwidth}
+        \begin{column}{0.45\textwidth}
             \begin{itemize}
                 \item Microkernel de código abierto.
-                \item Formalmente probado.
                 \item Hipervisor tipo 1.
-                \item Aislamiento garantizado entre componentes.
+                \item Aislamiento entre componentes garantizado.
             \end{itemize}
         \end{column}
+
+        % verde sel4 7BB661
+        % amarillo vm FFC857
+        % azul vm 6FA8DC
+        % gris pc B4C5D9
+        % gris switch E7E7E7
 
         \begin{column}{0.6\textwidth}
             \begin{figure}
                 \centering
-                \includegraphics[width=\textwidth]{images/sel4scheme.png}
-                \caption{\centering Arquitectura de seL4. (algo así, otra imagen)} 
+                \includegraphics[width=0.75\textwidth]{../../Tesis/figs/2_sel4arch.png}
+                \caption{\centering Esquema de entorno virtualizado usando seL4 como hipervisor.} 
             \end{figure}
         \end{column}
     \end{columns}
@@ -164,7 +170,6 @@ subsubsectionstyle=show/shaded/hide]
             \begin{itemize}
                 \item \textbf{C}omponent \textbf{A}rchitecture for \textbf{m}icro\textbf{k}ernel-based \textbf{E}mbedded \textbf{S}ystems.
                 \item Framework de desarrollo para seL4.
-                \item Arquitectura basada en componentes.
                 \item Comunicación mediante interfaces bien definidas.
             \end{itemize}
         \end{column}
@@ -172,8 +177,8 @@ subsubsectionstyle=show/shaded/hide]
         \begin{column}{0.5\textwidth}
             \begin{figure}
                 \centering
-                \includegraphics[width=0.8\textwidth]{example-image}
-                \caption{\centering Arquitectura de componentes CAmkES.} 
+                \includegraphics[width=0.7\textwidth]{images/camkes.png}
+                \caption{\centering Ejemplo de componentes e interfaces en CAmkES.} 
             \end{figure}
         \end{column}
     \end{columns}
@@ -181,70 +186,57 @@ subsubsectionstyle=show/shaded/hide]
     \note{CAmkES es un framework que simplifica el desarrollo de sistemas sobre seL4. Permite diseñar aplicaciones como un conjunto de componentes que se comunican a través de interfaces bien definidas. Esto es especialmente útil para nuestro proyecto ya que cada máquina virtual puede ser vista como un componente independiente con interfaces de comunicación controladas, lo que facilita la implementación de la segmentación de dominios.}
 \end{frame}
 
-\begin{frame}{Modelo minimal\_64}
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
+\begin{frame}{Modelos ejemplo en CAmkES}
+    \begin{columns}[T]
+        \begin{column}{0.43\textwidth}
+            \textbf{minimal\_64}
             \begin{itemize}
-                \item Ejemplo básico de CAmkES.
-                \item Implementación mínima de una VM para arquitectura de 64 bits.
+                \item Implementación mínima de una VM para arquitectura x86\_64.
                 \item Punto de partida para el desarrollo.
             \end{itemize}
         \end{column}
 
-        \begin{column}{0.5\textwidth}
-            \begin{figure}
-                \centering
-                \includegraphics[width=0.9\textwidth]{example-image}
-                \caption{\centering Arquitectura minimal\_64.} 
-            \end{figure}
-        \end{column}
-    \end{columns}
-    
-    \note{El modelo minimal_64 es un ejemplo fundamental en CAmkES que proporciona una configuración básica para ejecutar máquinas virtuales de 64 bits sobre seL4. Este modelo incluye los componentes esenciales como el VMM (Virtual Machine Monitor) y una configuración mínima de red. Nos sirve como base para entender cómo estructurar nuestro sistema y como punto de partida antes de agregar la complejidad de la comunicación ZeroMQ y la funcionalidad de encriptación.}
-\end{frame}
-
-\begin{frame}{Modelo zmq\_samples}
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
+        \begin{column}{0.43\textwidth}
+            \textbf{zmq\_samples}
             \begin{itemize}
-                \item Comunicación entre máquinas virtuales usando ZeroMQ.
-                \item Base para la implementación del encriptador.
+                \item Ejemplo de comunicación entre tres VMs usando ZeroMQ.
+                \item Modelo base para la implementación del encriptador.
             \end{itemize}
         \end{column}
-
-        \begin{column}{0.5\textwidth}
-            \begin{figure}
-                \centering
-                \includegraphics[width=0.9\textwidth]{example-image}
-                \caption{\centering Arquitectura zmq\_samples.} 
-            \end{figure}
-        \end{column}
     \end{columns}
     
-    \note{El modelo zmq_samples es un ejemplo práctico que demuestra cómo implementar comunicación segura entre máquinas virtuales en seL4 usando ZeroMQ. Este modelo nos sirve como punto de partida para implementar la comunicación entre los dominios rojo y negro de nuestro encriptador, manteniendo el aislamiento necesario mientras permite el intercambio controlado de información.}
 \end{frame}
-
-
 
 \section{Desarrollo}
 
 \begin{frame}{Estrategia de modelos en entornos virtualizados}
-   \begin{itemize}
-       \item \textbf{¿Qué?}: Realizar modelos que validen progresivamente los componentes desarrollados.
-       \item \textbf{¿Para qué?}: 
+       \textbf{¿Qué?} 
        \begin{itemize}
-        \item Ligar problemas concretos a cada modelo y resolverlos de forma independiente.
-        \item Implementar un encriptador funcional en un entorno virtualizado como paso previo a su despliegue en hardware.
+        \item Realizar modelos que validen progresivamente los componentes desarrollados.
        \end{itemize}
        
-   \end{itemize}
+       \vspace*{0.5cm}
+       \textbf{¿Para qué?} 
+       \begin{itemize}
+        \item Ligar problemas concretos a cada modelo y resolverlos de forma independiente.
+        \item Implementar un encriptador funcional en un entorno virtualizado como paso previo a trabajar con hardware.
+       \end{itemize}
+       
 \end{frame}
 
-\begin{frame}{Modelo I: Introduciendo la arquitectura lógica}
+\begin{frame}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\textwidth]{../../Tesis/figs/3_modelosall.png}
+        \caption{Modelos en entornos virtualizados.}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Modelo virtualizado}
     \begin{columns}
         \begin{column}{0.35\textwidth}
             \begin{itemize}
-                \item Validar la arquitectura lógica de tres VMs.
+                \item Validar la arquitectura lógica del encriptador.
                 \item Funcionalidad \textit{split-tunneling}.
             \end{itemize}
         \end{column}
@@ -252,39 +244,39 @@ subsubsectionstyle=show/shaded/hide]
             \begin{figure}
                 \centering
                 \includegraphics[width=\textwidth]{images/gns3_2.png}
-                \caption{Arquitectura lógica en GNS3.}
+                \caption{Simulación de la arquitectura lógica en GNS3.}
             \end{figure}
         \end{column}
     \end{columns}
 \end{frame}
 
-\begin{frame}{Modelo II: comunicando sitios con WireGuard}
-    \begin{columns}
-        \begin{column}{0.35\textwidth}
-            \begin{itemize}
-                \item Validación del kernel Linux 4.9 con soporte para WireGuard.
-                \item Obtener parámetros PCI necesarios para el passthrough de la interfaz de red.
-            \end{itemize}
-        \end{column}
-        \begin{column}{0.6\textwidth}
-            \begin{figure}
-                \centering
-                \includegraphics[width=\textwidth]{images/gns3_1.png}
-                \caption{Arquitectura lógica en GNS3.}
-            \end{figure}
-        \end{column}
-    \end{columns}
-\end{frame}
+% \begin{frame}{Modelo II: comunicando sitios con WireGuard}
+%     \begin{columns}
+%         \begin{column}{0.35\textwidth}
+%             \begin{itemize}
+%                 \item Validación del kernel Linux 4.9 con soporte para WireGuard.
+%                 \item Obtener parámetros PCI necesarios para el passthrough de la interfaz de red.
+%             \end{itemize}
+%         \end{column}
+%         \begin{column}{0.6\textwidth}
+%             \begin{figure}
+%                 \centering
+%                 \includegraphics[width=\textwidth]{images/gns3_1.png}
+%                 \caption{Arquitectura lógica en GNS3.}
+%             \end{figure}
+%         \end{column}
+%     \end{columns}
+% \end{frame}
 
-\begin{frame}{Modelo II: comunicando sitios con WireGuard - Sistema operativo VMs}
-        \begin{itemize}
-            \item Buildroot como sistema de archivos.
-            \item Kernel Linux 4.9.337.
-            \item Parche de compatibilidad WireGuard con Linux $\leq$ 5.6.
-        \end{itemize}
-\end{frame}
+% \begin{frame}{Modelo II: comunicando sitios con WireGuard - Sistema operativo VMs}
+%         \begin{itemize}
+%             \item Buildroot como sistema de archivos.
+%             \item Kernel Linux 4.9.337.
+%             \item Parche de compatibilidad WireGuard con Linux $\leq$ 5.6.
+%         \end{itemize}
+% \end{frame}
 
-\begin{frame}{Modelo III: utilizando seL4 como hipervisor}
+\begin{frame}{Modelo emulado}
     \begin{columns}
         \begin{column}{0.4\textwidth}
             \begin{itemize}
@@ -294,14 +286,16 @@ subsubsectionstyle=show/shaded/hide]
         \begin{column}{0.6\textwidth}
             \begin{figure}
                 \centering
-                \includegraphics[width=0.5\textwidth]{example-image}
-                \caption{Algo}
+                \includegraphics[width=0.95\textwidth]{../../Tesis/figs/3_modelemulated.png}
+                \caption{Esquema del modelo emulado.}
             \end{figure}
         \end{column}
     \end{columns}
+
+    \note{Acá contar como se obtienen los parámetros PCI necesarios para el passthrough de la interfaz de red. Y como se configura el kernel Linux 4.9 para que sea compatible con seL4. Buildroot wireguard etc}
 \end{frame}
 
-\begin{frame}{Modelo III: utilizando seL4 como hipervisor - Passthrough de hardware}
+\begin{frame}{Modelo emulado: passthrough de hardware}
     CAmkES actúa de interfaz para la configuración del passthrough de dispositivos PCI a una VM a través de los Base Address Registers (BARs) e interrupciones.
     
     \vspace*{1cm}
@@ -313,13 +307,13 @@ subsubsectionstyle=show/shaded/hide]
      \end{block}
 \end{frame}
 
-\begin{frame}{Modelo III: utilizando seL4 como hipervisor - Gestión de memoria VMs}
+\begin{frame}{Modelo emulado: gestión de memoria VMs}
     \texttt{simple\_untypedN\_pool:} prealocación de memoria para las VMs. \\
     \texttt{heap\_size:} tamaño del heap del VMM. \\
     \texttt{guest\_ram\_mb:} tamaño de la RAM asignada a cada VM.
 \end{frame}
 
-\begin{frame}{Modelo IV: implementando el encriptador en seL4}
+\begin{frame}{Modelo de hardware}
     \begin{columns}
         \begin{column}{0.4\textwidth}
             \begin{itemize}
@@ -330,67 +324,163 @@ subsubsectionstyle=show/shaded/hide]
         \begin{column}{0.6\textwidth}
             \begin{figure}
                 \centering
-                \includegraphics[width=\textwidth]{images/3_model4.png}
-                \caption{Algo.}
+                \includegraphics[width=\textwidth]{../../Tesis/figs/3_model4.png}
+                \caption{Esquema del modelo de hardware.}
             \end{figure}
         \end{column}
     \end{columns}
 \end{frame}
 
-\begin{frame}{Modelo IV: Encriptador en seL4 - Comunicación entre VMs}
+\begin{frame}{Modelo de hardware: comunicación entre VMs}
 \textbf{¿Cómo funciona?}
 \begin{block}{\small Virtio-Net en VM}
-
 \begin{itemize}
     \item El host implementa un dispositivo PCI virtual (virtio-net).
-    \item La VM encuentra este dispositivo y carga el driver virtio-net.
+    \item La VM encuentra este dispositivo y carga el driver correspondiente.
     \item En la transmisión, la VM escribe los datos a enviar en un buffer asociado a una cola del hipervisor. El VMM notifica al host que hay datos listos en la cola (virtqueue).
 \end{itemize}
 \end{block}
 
 \begin{block}{\small Virtio-Net en host}
 \begin{itemize}
-    \item El host lee el paquete de la virtqueue y lo copia a un buffer dentro del espacio de memoria de la VM destino.
+    \item El host lee el paquete en la virtqueue y lo copia a un buffer dentro del espacio de memoria de la VM destino.
     \item El host inyecta una interrupción en la VM destino para notificarle que hay datos disponibles.
 \end{itemize}
 \end{block}
 
-
-
 \end{frame}
 
-\begin{frame}{Modelo IV: Encriptador en seL4 - Integración}
+% \begin{frame}{Modelo de hardware: comunicación entre VMs}
+%     \textbf{Desafíos:}
+%     \begin{itemize}
+%         \item La implementación actual requiere de 7 map/unmap de memoria por paquete.
+%     \end{itemize}
+
+% \end{frame}
+
+\begin{frame}{Modelo de hardware: integración}
 % Mostrar ping entre PCs
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{images/pingAB.png}
-    \caption{Ping entre PCs.}
+    \caption{Comunicación entre PCs en nodos distintos.}
 \end{figure}
 \end{frame}
 
+\begin{frame}{Modelo de hardware: integración}
+% Mostrar ping entre PCs
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/pinginternet.png}
+    \caption{Ping de un nodo a internet.}
+\end{figure}
+\end{frame}
+
+% Slide 1: Características del hardware
 \begin{frame}{Implementación en hardware}
 \begin{columns}
-\onslide<1->{
     \begin{column}{0.5\textwidth}
-            \begin{figure}
-                \centering
-                \includegraphics[width=0.8\textwidth]{example-image}
-                \caption{SuperMicro SYS-E300-9D.} 
-            \end{figure}
-        \end{column}
-}
- \onslide<2->{
-        \begin{column}{0.4\textwidth}
-            \textbf{Desafíos:}
-            \begin{itemize}
-                \item[\space \textcolor{green}{\checkmark}] Redirección de consola.
-                \item[{\color{red}\texttimes}] Passthrough de controlador Ethernet.
-                \item[{\color{red}\texttimes}] Throughput entre VMs.
-            \end{itemize}
-        \end{column}
- }
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.8\textwidth]{../../Tesis/figs/4_hardware.png}
+            \caption{SuperMicro SYS-E300-9D.} 
+        \end{figure}
+    \end{column}
+    \begin{column}{0.4\textwidth}
+        \textbf{Características:}
+        \begin{itemize}
+            \item CPU: Intel Xeon D-2123IT (4C/8T)
+            \item RAM: 32 GB DDR4
+            \item 4x NIC Intel i210 1GbE \\
+            2x NIC Intel X553 10GbE
+            \item Soporte para virtualización (VT-x, VT-d)
+        \end{itemize}
+    \end{column}
 \end{columns}
+\end{frame}
 
+% Slide 2: Desafíos
+\begin{frame}{Implementación en hardware: desafíos}
+\begin{columns}
+    \begin{column}{0.5\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.8\textwidth]{../../Tesis/figs/4_hardware.png}
+            \caption{SuperMicro SYS-E300-9D.} 
+        \end{figure}
+    \end{column}
+    \begin{column}{0.4\textwidth}
+        \textbf{Desafíos:}
+        \begin{itemize}
+            \item[\space \textcolor{green}{\checkmark}] Redirección de consola.
+            \item[{\color{red}\texttimes}] Passthrough de controlador Ethernet.
+            \item[{\color{red}\texttimes}] Throughput entre VMs.
+        \end{itemize}
+    \end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Implementación en hardware: throughput entre VMs}
+\begin{columns}
+    \begin{column}{0.51\textwidth}
+    \begin{itemize}
+         \item La implementación actual requiere de 7 mapeos de memoria por paquete, lo que limita drásticamente el throughput.
+    \end{itemize}
+
+    \end{column}
+    \begin{column}{0.50\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.75\textwidth]{example-image}
+            \caption{Throughput medido entre VMs.}
+        \end{figure}
+    \end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Implementación en hardware: throughput entre VMs}
+\begin{columns}[T]
+    \begin{column}{0.50\textwidth}
+    Existen alternativas para mejorar el rendimiento:
+    \begin{itemize}
+        \item Translation Vspace.
+        \item Optimización de copias en memoria.
+    \end{itemize}
+
+    \end{column}
+    \begin{column}{0.45\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.85\textwidth]{images/throughput_improve.png}
+            \caption{\centering Optimizaciones logradas sobre el throughput entre VMs. \hspace{4cm} \footnotesize{Fuente: seL4 Summit 2023.}}
+        \end{figure}
+    \end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Implementación en hardware: throughput entre VMs}
+\begin{columns}[T]
+    \begin{column}{0.50\textwidth}
+    Existen alternativas para mejorar el rendimiento:
+    \begin{itemize}
+        \item Translation Vspace.
+        \item Optimización de copias en memoria.
+    \end{itemize}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.35\textwidth]{images/bug.png}
+    \end{figure}
+
+    \end{column}
+    \begin{column}{0.45\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.85\textwidth]{images/throughput_improve.png}
+            \caption{\centering Optimizaciones logradas sobre el throughput entre VMs. \hspace{4cm} \footnotesize{Fuente: seL4 Summit 2023.}}
+        \end{figure}
+    \end{column}
+\end{columns}
 \end{frame}
 
 

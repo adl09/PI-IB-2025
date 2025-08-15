@@ -1,12 +1,12 @@
 # Fdb version 4
-["pdflatex"] 1754935937.94008 "/home/alberto/Documentos/PI-IB-2025/docs/Presentaciones/Charla_Avance_2/slide.tex" "slide.pdf" "slide" 1754935945.86144 0
+["pdflatex"] 1754942823.29207 "/home/alberto/Documentos/PI-IB-2025/docs/Presentaciones/Charla_Avance_2/slide.tex" "slide.pdf" "slide" 1754942837.00138 0
   "../../Tesis/figs/2_sel4arch.png" 1754693094.54195 10668 973872242861417cfbd9f9cf63301c4e ""
   "../../Tesis/figs/3_model4.png" 1754693401.30974 20100 34dd31e6fda979190b8efceccea949e5 ""
   "../../Tesis/figs/3_modelemulated.png" 1754746452.5244 12245 68a11d2ea1e322f9080586d640446021 ""
   "../../Tesis/figs/3_modelosall.png" 1754682367.61403 24799 f9554a3518b8ab810bcc323e9b28ad35 ""
   "../../Tesis/figs/4_hardware.png" 1754684885.2495 688377 598582e4fece34dcee66e13985e27881 ""
   "/etc/texmf/web2c/texmf.cnf" 1738616132.16538 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/alberto/Documentos/PI-IB-2025/docs/Presentaciones/Charla_Avance_2/slide.tex" 1754935937.74169 17735 7363d5b2d41c61a2bff0993f594fb0e7 ""
+  "/home/alberto/Documentos/PI-IB-2025/docs/Presentaciones/Charla_Avance_2/slide.tex" 1754942701.28337 18450 c129d1aca36d923133f4c58093e841fc ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1095.tfm" 1136768653 3584 929cdff2b7a8c11bd4d49fd68cb0ae70 ""
@@ -252,10 +252,10 @@
   "images/pingAB.png" 1754571919.91317 439045 3eaa3e90e1aea8e22cc923de1cbf2f87 ""
   "images/pinginternet.png" 1754572035.76083 458024 cb7f5fc19006ba3441db2a7763e5e591 ""
   "images/throughput_improve.png" 1754684501.52237 264956 b1f818f3625be8885c19260813a7a88b ""
-  "slide.aux" 1754935945.72082 6413 0fa193993a2c0ade51b34bda12714096 "pdflatex"
-  "slide.nav" 1754935945.72382 3519 8a6e62bfe8a4c7abe9cc91e92c0a5536 "pdflatex"
-  "slide.tex" 1754935937.74169 17735 7363d5b2d41c61a2bff0993f594fb0e7 ""
-  "slide.toc" 1754935945.72382 235 f04144495948bb0e8b5f697b95155aa3 "pdflatex"
+  "slide.aux" 1754942836.77847 6541 64b5c753df085fb1ec9255544eeee0dd "pdflatex"
+  "slide.nav" 1754942836.78247 3611 93e199b7f95e0cdbbb5ffeabd6042df0 "pdflatex"
+  "slide.tex" 1754942701.28337 18450 c129d1aca36d923133f4c58093e841fc ""
+  "slide.toc" 1754942836.78247 235 f04144495948bb0e8b5f697b95155aa3 "pdflatex"
   (generated)
   "slide.aux"
   "slide.log"

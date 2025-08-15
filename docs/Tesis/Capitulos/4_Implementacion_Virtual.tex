@@ -56,8 +56,51 @@ Por defecto se definen\dots
 
 
 \subsubsection{Configuración del \textit{passthrough} de controlador Ethernet}
+El hipervisor permite otorgar a una VM acceso directo a un dispositivo de hardware, como una tarjeta de red. Este procedimiento, conocido como \textit{passthrough} de dispositivos PCI, posibilita que la VM utilice el dispositivo como si estuviera conectado físicamente al bus del sistema anfitrión, mejorando el rendimiento en comparación con la emulación del dispositivo.
 
+Un dispositivo PCI se identifica por un número de interrupción (IRQ o MSI) y un conjunto de \textit{Base Address Registers} o BARs que definen las direcciones de memoria y los puertos de entrada/salida que emplea el dispositivo. Estos parámetros deben especificarse en la configuración del VMM para permitir el acceso de la VM a los recursos físicos del dispositivo.
 
+El procedimiento para obtener los parametros necesarios consiste en iniciar un sistema operativo Linux no virtualizado. En este, los dispositivos PCI son detectados y gestionados automáticamente por el sistema. Una vez iniciado, el comando \texttt{lspci} permite listar los dispositivos PCI conectados al sistema, proporcionando información detallada sobre cada dispositivo.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{BAR} & \textbf{Dirección inicio} & \textbf{Dirección fin} & \textbf{Flags} \\
+\hline
+0 & 0xfeb80000 & 0xfeb9ffff & 0x00040200 \\
+1 & 0xfeba0000 & 0xfebbffff & 0x00040200 \\
+2 & 0x0000c000 & 0x0000c01f & 0x00040101 \\
+3 & 0xfebd0000 & 0xfebd3fff & 0x00040200 \\
+4 & 0x00000000 & 0x00000000 & 0x00000000 \\
+5 & 0x00000000 & 0x00000000 & 0x00000000 \\
+6 & 0xfeb00000 & 0xfeb7ffff & 0x00046200 \\
+\hline
+\end{tabular}
+\caption{Registros del dispositivo PCI e1000e emulado en QEMU.}
+\label{tab:bar-pci}
+\end{table}
+
+ En la tabla \ref{tab:bar-pci} se muestran, a modo de ejemplo, los BARs asociados al dispositivo de red utilizado en este ensayo. El campo de flags permite identificar el tipo de registro, ya sea de memoria o de entrada/salida, determinando que los BAR 0, 1, 3 y 6 son registros de memoria, mientras que el BAR 2 es un registro de entrada/salida. Los BAR 4 y 5 no son utilizados por este dispositivo. 
+
+Esta información, en conjunto con el número de IRQ (que en este caso es 11), se utiliza para configurar el VMM de seL4 y permitir que la VM acceda al dispositivo de red. El archivo de configuración del VMM, ubicado en \textit{vm-examples/apps/x86/zmq\_samples.camkes}, debe incluir los siguientes campos:
+
+\begin{lstlisting}[caption={Configuración CAmkES para el passthrough del dispositivo de red e1000e.}, label={lst:zmq_samples_passthrough}]
+vm0.vm_ioports = [
+    {"start":0xc040, "end":0xc05f, "pci_device":3, "name":"inner_eth"}
+];
+vm0.pci_devices = [
+    {"name":"inner_eth",
+    "bus":0, "dev":0x3, "fun":0, "irq":"inner_eth",
+    "memory":[
+        {"paddr":0xfeb00000, "size":0x20000, "page_bits":12},
+        {"paddr":0xfeb20000, "size":0x20000, "page_bits":12},
+        {"paddr":0xfeb90000, "size":0x4000, "page_bits":12}]}
+];
+vm0.vm_irqs = [
+    {"name":"inner_eth", "ioapic":0, "source":0xb, "level_trig":0, "active_low":1, "dest":10}
+];
+\end{lstlisting}
 
 \begin{itemize}
     \item Interfaz e1000 QEMU. PCI. BARS. IRQ.

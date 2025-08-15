@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.2.3)  11 AUG 2025 15:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.2.3)  11 AUG 2025 17:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1002,7 +1002,7 @@ LaTeX Font Info:    Redeclaring math accent \widetilde on input line 52.
 LaTeX Info: Redefining \. on input line 52.
 LaTeX Info: Redefining \% on input line 52.
  (./slide.nav)
-<images/institucionales_cnea.png, id=87, 45.89145pt x 45.89145pt>
+<images/institucionales_cnea.png, id=89, 45.89145pt x 45.89145pt>
 File: images/institucionales_cnea.png Graphic file (type png)
 <use images/institucionales_cnea.png>
 Package pdftex.def Info: images/institucionales_cnea.png  used on input line 85.
@@ -1035,17 +1035,17 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 85.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-<images/institucionales_IB.png, id=89, 56.00925pt x 56.00925pt>
+<images/institucionales_IB.png, id=91, 56.00925pt x 56.00925pt>
 File: images/institucionales_IB.png Graphic file (type png)
 <use images/institucionales_IB.png>
 Package pdftex.def Info: images/institucionales_IB.png  used on input line 85.
 (pdftex.def)             Requested size: 29.87569pt x 29.87617pt.
-<images/institucionales_INVAP.png, id=90, 2569.6pt x 672.5125pt>
+<images/institucionales_INVAP.png, id=92, 2569.6pt x 672.5125pt>
 File: images/institucionales_INVAP.png Graphic file (type png)
 <use images/institucionales_INVAP.png>
 Package pdftex.def Info: images/institucionales_INVAP.png  used on input line 85.
 (pdftex.def)             Requested size: 49.79231pt x 13.0221pt.
-<images/institucionales_cuyo.png, id=91, 39.7485pt x 39.7485pt>
+<images/institucionales_cuyo.png, id=93, 39.7485pt x 39.7485pt>
 File: images/institucionales_cuyo.png Graphic file (type png)
 <use images/institucionales_cuyo.png>
 Package pdftex.def Info: images/institucionales_cuyo.png  used on input line 85.
@@ -1063,7 +1063,7 @@ LaTeX Info: Redefining \% on input line 1.
 ) [3
 
 ]
-<images/conops.png, id=341, 1055.945pt x 832.10875pt>
+<images/conops.png, id=350, 1055.945pt x 832.10875pt>
 File: images/conops.png Graphic file (type png)
 <use images/conops.png>
 Package pdftex.def Info: images/conops.png  used on input line 106.
@@ -1071,7 +1071,7 @@ Package pdftex.def Info: images/conops.png  used on input line 106.
  [4
 
  <./images/conops.png>]
-<images/gns3_2.png, id=411, 1560.83125pt x 642.4pt>
+<images/gns3_2.png, id=422, 1560.83125pt x 642.4pt>
 File: images/gns3_2.png Graphic file (type png)
 <use images/gns3_2.png>
 Package pdftex.def Info: images/gns3_2.png  used on input line 126.
@@ -1086,7 +1086,7 @@ LaTeX Info: Redefining \% on input line 1.
 ) [7
 
 ]
-<../../Tesis/figs/2_sel4arch.png, id=625, 257.96375pt x 167.62625pt>
+<../../Tesis/figs/2_sel4arch.png, id=642, 257.96375pt x 167.62625pt>
 File: ../../Tesis/figs/2_sel4arch.png Graphic file (type png)
 <use ../../Tesis/figs/2_sel4arch.png>
 Package pdftex.def Info: ../../Tesis/figs/2_sel4arch.png  used on input line 165.
@@ -1094,7 +1094,7 @@ Package pdftex.def Info: ../../Tesis/figs/2_sel4arch.png  used on input line 165
  [8
 
  <../../Tesis/figs/2_sel4arch.png>]
-<images/camkes.png, id=696, 587.19376pt x 563.10374pt>
+<images/camkes.png, id=715, 587.19376pt x 563.10374pt>
 File: images/camkes.png Graphic file (type png)
 <use images/camkes.png>
 Package pdftex.def Info: images/camkes.png  used on input line 187.
@@ -1111,7 +1111,7 @@ LaTeX Info: Redefining \% on input line 1.
 ] [12
 
 ]
-<../../Tesis/figs/3_modelosall.png, id=977, 645.41125pt x 382.42876pt>
+<../../Tesis/figs/3_modelosall.png, id=1004, 645.41125pt x 382.42876pt>
 File: ../../Tesis/figs/3_modelosall.png Graphic file (type png)
 <use ../../Tesis/figs/3_modelosall.png>
 Package pdftex.def Info: ../../Tesis/figs/3_modelosall.png  used on input line 233.
@@ -1130,7 +1130,7 @@ Package pdftex.def Info: images/gns3_2.png  used on input line 251.
  [14
 
 ]
-<../../Tesis/figs/3_modelemulated.png, id=1118, 442.65375pt x 160.6pt>
+<../../Tesis/figs/3_modelemulated.png, id=1149, 442.65375pt x 160.6pt>
 File: ../../Tesis/figs/3_modelemulated.png Graphic file (type png)
 <use ../../Tesis/figs/3_modelemulated.png>
 Package pdftex.def Info: ../../Tesis/figs/3_modelemulated.png  used on input line 296.
@@ -1146,7 +1146,7 @@ File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}] [17
 
 ]
-<../../Tesis/figs/3_model4.png, id=1326, 633.36626pt x 250.9375pt>
+<../../Tesis/figs/3_model4.png, id=1363, 633.36626pt x 250.9375pt>
 File: ../../Tesis/figs/3_model4.png Graphic file (type png)
 <use ../../Tesis/figs/3_model4.png>
 Package pdftex.def Info: ../../Tesis/figs/3_model4.png  used on input line 332.
@@ -1156,7 +1156,7 @@ Package pdftex.def Info: ../../Tesis/figs/3_model4.png  used on input line 332.
  <../../Tesis/figs/3_model4.png>] [19
 
 ]
-<images/pingAB.png, id=1466, 1927.2pt x 1084.05pt>
+<images/pingAB.png, id=1507, 1927.2pt x 1084.05pt>
 File: images/pingAB.png Graphic file (type png)
 <use images/pingAB.png>
 Package pdftex.def Info: images/pingAB.png  used on input line 368.
@@ -1168,7 +1168,7 @@ Overfull \vbox (12.95834pt too high) detected at line 368
 [20
 
  <./images/pingAB.png>]
-<images/pinginternet.png, id=1536, 1927.2pt x 1084.05pt>
+<images/pinginternet.png, id=1579, 1927.2pt x 1084.05pt>
 File: images/pinginternet.png Graphic file (type png)
 <use images/pinginternet.png>
 Package pdftex.def Info: images/pinginternet.png  used on input line 377.
@@ -1180,7 +1180,7 @@ Overfull \vbox (12.95834pt too high) detected at line 377
 [21
 
  <./images/pinginternet.png>]
-<../../Tesis/figs/4_hardware.png, id=1606, 815.045pt x 620.3175pt>
+<../../Tesis/figs/4_hardware.png, id=1652, 815.045pt x 620.3175pt>
 File: ../../Tesis/figs/4_hardware.png Graphic file (type png)
 <use ../../Tesis/figs/4_hardware.png>
 Package pdftex.def Info: ../../Tesis/figs/4_hardware.png  used on input line 400.
@@ -1198,7 +1198,7 @@ File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
 ) [23
 
 ]
-<example-image.pdf, id=1746, 321.2pt x 240.9pt>
+<example-image.pdf, id=1795, 321.2pt x 240.9pt>
 File: example-image.pdf Graphic file (type pdf)
 <use example-image.pdf>
 Package pdftex.def Info: example-image.pdf  used on input line 439.
@@ -1206,7 +1206,7 @@ Package pdftex.def Info: example-image.pdf  used on input line 439.
  [24
 
  </usr/share/texlive/texmf-dist/tex/latex/mwe/example-image.pdf>]
-<images/throughput_improve.png, id=1821, 941.5175pt x 634.37pt>
+<images/throughput_improve.png, id=1873, 941.5175pt x 634.37pt>
 File: images/throughput_improve.png Graphic file (type png)
 <use images/throughput_improve.png>
 Package pdftex.def Info: images/throughput_improve.png  used on input line 460.
@@ -1214,7 +1214,7 @@ Package pdftex.def Info: images/throughput_improve.png  used on input line 460.
  [25
 
  <./images/throughput_improve.png>]
-<images/bug.png, id=1893, 389.49727pt x 389.49727pt>
+<images/bug.png, id=1946, 389.49727pt x 389.49727pt>
 File: images/bug.png Graphic file (type png)
 <use images/bug.png>
 Package pdftex.def Info: images/bug.png  used on input line 484.
@@ -1233,6 +1233,8 @@ LaTeX Info: Redefining \% on input line 1.
 ] [28
 
 ] [29
+
+] [30
 
 ]
 \tf@nav=\write5
@@ -1254,18 +1256,18 @@ L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 25967 strings out of 474222
- 484312 string characters out of 5748734
- 1954975 words of memory out of 5000000
- 47604 multiletter control sequences out of 15000+600000
+ 25971 strings out of 474222
+ 484347 string characters out of 5748734
+ 1955975 words of memory out of 5000000
+ 47606 multiletter control sequences out of 15000+600000
  633691 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  101i,20n,107p,601b,885s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on slide.pdf (29 pages, 2499120 bytes).
+Output written on slide.pdf (30 pages, 2502661 bytes).
 PDF statistics:
- 2200 PDF objects out of 2487 (max. 8388607)
- 1140 compressed objects within 12 object streams
- 63 named destinations out of 1000 (max. 500000)
+ 2331 PDF objects out of 2487 (max. 8388607)
+ 1206 compressed objects within 13 object streams
+ 65 named destinations out of 1000 (max. 500000)
  190 words of extra memory for PDF output out of 10000 (max. 10000000)
 
